@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+    <title>MyCuisine</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="images/png" href="images/cake8-fav.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        setTimeout(function () {
+            $('.loader').fadeOut('slow', function () {
+                $(this).remove();
+            });
+        }, 1500);
+    });
+</script>
 </head>
+
 <body>
- <h1>hello</h1>
+
+<div class="loader"></div>
+
+<div id="wrapper">
+    <div id="nav-after">&nbsp;</div>
+    <header id="myCuisine-header">
+        <nav class="container nav navbar-default">
+            <div class = "header-menu">
+                <div class="navbar-header">
+                    <a id="logo" class="navbar-brand" href="#/">
+                        <img src="images/Logo.png" class="center-block" alt="My Cuisine">
+                    </a>
+                </div>
+
+                <div id="myCuisine-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/">Home</a></li>
+                        <li><a href="#/Home/Contact">Contact</a></li>
+                        <li><a href="#/Home/Menu">Menu</a></li>
+                        <li ><a href="#/Home/Location">Location</a></li>
+                        <li><a href="#/Home/Blog">Hours</a></li>
+                        <li><a href="#/Home/Blog">Awards</a></li>
+                        <li><a href="#/Home/Blog">Rewiews</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="slider">
+        <!--<img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />-->
+        <!--<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0; left: 0; width: 1270px; height: 475px; overflow: hidden; visibility: hidden;">-->
+
+            <!-- Slides -->
+            <div data-u="slides" style="cursor: default; position: relative; top: 0; left: 0; width: 1300px; height: 500px; overflow: hidden;">
+                <div data-p="225.00" style="display: none;">
+                    <img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />
+                    <div class="slider-title">Bulgarian Food</div>
+                    <div class="slider-description">
+                        Recipes are formed for centuries,
+                        with traditions in flavoring and established methods and techniques for preparing,
+                        presenting a fusion of European and Asian cuisine.
+                        <div class="slider-button">
+                            <!--<a href="/post/3YwdNX1AYQ" class="btn btn-success">Read more</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora22l" style="top:0;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora22r" style="top:0;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <!--</div>-->
+        <div class="slide-top-shadow"></div>
+        <div class="slide-bottom-shadow"></div>
+        <div class="slide-bottom-shadow"></div>
+    </div>
+    <!-- ==================================================== -->
+
+    <div id="contentMain"></div><!-- end #content -->
+
+    <!-- Footer -->
+
+    <footer id="myCuisine-footer" class="nav navbar-default text-center">
+        <nav class="container">
+            <div>
+                <ul class="nav navbar-nav">
+                        <li class="active"><a href="#/">Home</a></li>
+                        <li><a href="#/Home/Contact">Contact</a></li>
+                        <li><a href="#/Home/Menu">Menu</a></li>
+                        <li ><a href="#/Home/Location">Location</a></li>
+                        <li><a href="#/Home/Blog">Hours</a></li>
+                        <li><a href="#/Home/Blog">Awards</a></li>
+                        <li><a href="#/Home/Blog">Rewiews</a></li>
+                </ul>
+                <div id="copiright">Designed by <a href="http://www.elegantthemes.com/preview/MyCuisine/" target="_blank" >ElegantThemes</a> | Powered by <a href="https://wordpress.org/" target="_blank" >WordPress</a> and <a href="http://getbootstrap.com/" target="_blank" >Bootstrap</a></div>
+            </div>
+        </nav>
+    </footer>
+
+</div><!-- end #wrapper -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 </body>
 </html>

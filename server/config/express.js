@@ -3,7 +3,7 @@ const express = require('express');
 module.exports = function (app, config) {
 
     // Jade settings
-    app.set('view engine', 'pug');
+
     app.set('views', config.rootPath + '/server/views');
 
     // Directory for static files, which are accessible on the server
