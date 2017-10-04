@@ -42,13 +42,13 @@
                 </div>
                 <div id="myCuisine-navbar-collapse">
                     <ul class="navbar">
-                        <li class="active"><a href="#/">Home</a></li>
-                        <li><a href="#/Home/Contact">Contact</a></li>
-                        <li><a href="#/Home/Menu">Menu</a></li>
-                        <li ><a href="#/Home/Location">Location</a></li>
-                        <li><a href="#/Home/Blog">Hours</a></li>
-                        <li><a href="#/Home/Blog">Awards</a></li>
-                        <li><a href="#/Home/Blog">Rewiews</a></li>
+                        <li class="active"><a href="#/">HOME</a></li>
+                        <li><a href="#/Home/Contact">CONTACT</a></li>
+                        <li><a href="#/Home/Menu">MENU</a></li>
+                        <li ><a href="#/Home/Location">LOCATION</a></li>
+                        <li><a href="#/Home/Blog">HOURS</a></li>
+                        <li><a href="#/Home/Blog">AWARDS</a></li>
+                        <li><a href="#/Home/Blog">REVIEWS</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="slider-image">
                     <img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />
                     <div class="slider-title">Pastries</div>
-                    <div class="slider-description ">
+                    <div class="slider-description">
                         Recipes are formed for centuries,
                         <div class="slider-button">
                             <a href="/post/3YwdNX1AYQ" class="btn btn-success">Read more</a>
@@ -73,17 +73,16 @@
                 </div>
             </div>
             <!-- Bullet Navigator -->
-            <div data-u="navigator">
-                <!-- bullet navigator item prototype -->
-                <div data-u="prototype"></div>
+        <div id="breadcrumbs">
+            <div class="container">
+                <ol class="breadcrumb pull-left">
+                    <li ng-repeat="item in vm.location"><a href="#/{{item.path}}">{{item.name}}</a></li>
+                    <li class="active">{{vm.currentLocation}}</li>
+                </ol>
+
             </div>
-            <!-- Arrow Navigator -->
-            <span data-u="arrowleft" class="jssora22l"></span>
-            <span data-u="arrowright" class="jssora22r"></span>
-        <!--</div>-->
-        <div class="slide-top-shadow"></div>
-        <div class="slide-bottom-shadow"></div>
-        <div class="slide-bottom-shadow"></div>
+        </div>
+
     </div>
 
     <div id="slogan">
