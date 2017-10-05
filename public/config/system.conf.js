@@ -9,7 +9,7 @@ SystemJS.config({
         "index": "../app/index.js",
         "templates": "../app/templates.js",
         "homeController": "../../controllers/homeController.js",
-        // "categoriesController": "../controllers/categoriesController.js",
+        "locationController": "../../controllers/locationController.js",
         // "singlePostController ": "../controllers/singlePostController.js",
 
         //Libraries\\

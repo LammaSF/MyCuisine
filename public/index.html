@@ -32,6 +32,7 @@
 
     <!--<link rel="stylesheet" href="../node_modules/jquery-ui-dist/jquery-ui.css">-->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/location.css">
 
     <!--<link rel="shortcut icon" type="image/png" href="./images/1458232566162.png"/>-->
 
@@ -82,49 +83,7 @@
         </nav>
     </header>
 
-    <div id="slider">
-        <!--<img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />-->
-        <!--<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0; left: 0; width: 1270px; height: 475px; overflow: hidden; visibility: hidden;">-->
 
-        <!-- Slides -->
-        <div data-u="slides" >
-            <div class="slider-image">
-                <img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />
-                <div class="slider-title">Pastries</div>
-                <div class="slider-description">
-                    Recipes are formed for centuries,
-                    <div class="slider-button">
-                        <a href="/post/3YwdNX1AYQ" class="btn btn-success">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bullet Navigator -->
-        <div id="breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb pull-left">
-                    <li ng-repeat="item in vm.location"><a href="#/{{item.path}}">{{item.name}}</a></li>
-                    <li class="active">{{vm.currentLocation}}</li>
-                </ol>
-
-            </div>
-        </div>
-
-    </div>
-
-    <div id="slogan">
-        <div class="container">
-            <h2 class="slogan-header center">“Bake a world a better place”</h2>
-
-            <div id="stars" class="center">
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
-            </div>
-        </div>
-    </div>
     <!-- ==================================================== -->
 
     <div id="main-content"></div><!-- end #content -->

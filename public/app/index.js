@@ -1,9 +1,8 @@
 import {templates} from 'templates';
 
 import { homeController } from 'homeController';
+import { locationController } from 'locationController';
 
-// import { categoriesController } from 'categoriesController';
-// import { singlePostController  } from 'singlePostController ';
 
 const router = new Navigo(null, false, '#!');
 
@@ -11,7 +10,7 @@ router
     .on(() => homeController.all())
     .on({
         '/#/': () => homeController.all(),
-        // '/#/?:pageNumber': () => homeController.getPage(),
+        '/#/location': () => locationController.getPage(),
         // '/beauty/:categorie': (params) => categoriesController(params),
         // '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
         // '/health/:categorie': (params) => categoriesController(params),

@@ -1,6 +1,20 @@
 <div class="contentMain-content-area">
-    <div breadcrumbs-directive>
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li ng-repeat="item in vm.location"><a href="#/{{item.path}}">{{item.name}}</a></li>
+                <li class="active">{{vm.currentLocation}}</li>
+            </ol>
 
+            <div class="myCuisine-search pull-right">
+                <form method="get" id="searchform" action="">
+
+                    <input type="text" id="search-input" class="" name="searchInput" placeholder="Search this website...">
+
+                    <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- content-area -->
