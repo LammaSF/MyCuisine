@@ -98,18 +98,19 @@ text-decoration: none;
 
 /*slider*/
 
-.slider-image img{
+.carousel-inner > .item > img{
     /*margin-top:0px;*/
     padding-top: 0%;
     position: relative;
     top: 0;
     /*left: 0;*/
     margin-top:0px!important;
-
+    interval: true;
     width: 100%;
     height: 500px;
-    /*color: white;*/
+    color: white;
     overflow: hidden;
+
     /*style="cursor: default; position: relative; top: 0; left: 0; height: 500px; overflow: hidden;"*/
 }
 
@@ -156,4 +157,68 @@ text-decoration: none;
 #home {
     color: red;
     z-index: 1000;
+}
+
+/*main*/
+.content-area-container {
+    background-color: #f2f0d7;
+
+}
+
+.content-area-container .content-items a {
+    font-family: "LeagueGothic-Regular", serif;
+    font-style: normal;
+    color: #442917;
+    letter-spacing: -1px;
+}
+
+#location-home #map {
+    height: 150px;
+}
+
+#location-home .work-time {
+    padding: 0;
+}
+
+#location-home .work-time .day {
+    font-size: 1.5em;
+}
+
+#location-home .work-time .clock {
+    color: #442917;
+}
+
+#testimonials .testimonial {
+    box-shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b;
+}
+
+.testimonial h1, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h6 {
+    margin: 0;
+}
+
+.browse-content-btn {
+    border-radius: 18px;
+    border: 1px solid rgba(65, 58, 39, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.3em;
+    background: #88b467;
+    /* Old browsers */
+    background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(top, #88b467 0%, #698d4d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.browse-content-btn.home-menu-btn {
+    width: 250px !important;
+    overflow: hidden;
+}
+
+.browse-content-btn:focus {
+    outline: none;
 }

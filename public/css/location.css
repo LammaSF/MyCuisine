@@ -1,3 +1,35 @@
+/*menu wrapper*/
+
+#wrapper-background {
+    width: 100%;
+    height: 243pt;
+    background-color: #471414;
+     /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover, #76422f 0, #5d261c 25%, #461312 55%, #471414 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(bottom, ellipse cover, #76422f 0, #5d261c 25%, #461312 55%, #471414 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(ellipse at bottom, #76422f 0, #5d261c 25%, #461312 55%, #471414 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: #fff;
+}
+
+.contentMain-header .header-title {
+    padding-top: 30px !important;
+}
+
+.contentMain-header #myCuisineCarousel > div {
+    min-height: 120px !important;
+}
+
+.contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+    display: none !important;
+}
+
+.contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+    display: none !important;
+}
+
 .contentMain-content-area {
     background-color: #f2f0d7;
 }

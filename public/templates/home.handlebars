@@ -4,30 +4,60 @@
         <!--<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0; left: 0; width: 1270px; height: 475px; overflow: hidden; visibility: hidden;">-->
 
         <!-- Slides -->
-        <div data-u="slides" >
-            <div class="slider-image">
-                <img data-u="image" src="images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" />
-                <div class="slider-title">Pastries</div>
-                <div class="slider-description">
-                    Recipes are formed for centuries,
-                    <div class="slider-button">
-                        <a href="/post/3YwdNX1AYQ" class="btn btn-success">Read more</a>
+        <!--<div data-u="slides" >-->
+            <!--<div class="slider-image">-->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="true">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../images/slider/Cake_Strawberry_Blueberries_Dessert.jpg" alt="cake">
+                            <div class="carousel-caption slider-title">
+                                <p>Los Angeles</p>
+                                <div class="slider-description">
+                                    Recipes are formed for centuries,
+                                    <div class="slider-button">
+                                        <a href="/post/3YwdNX1AYQ" class="btn browse-content-btn home-menu-btn">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../images/slider/333634.jpg" alt="cake">
+                            <div class="carousel-caption slider-title">
+                                <p>Los Angeles</p>
+                                <div class="slider-description">
+                                    Recipes are formed for centuries,
+                                    <div class="slider-button">
+                                        <a href="/post/3YwdNX1AYQ" class="btn browse-content-btn home-menu-btn">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="../images/slider/luxfon.com_35149.jpg" alt="coffee">
+                            <div class="carousel-caption slider-title">
+                                <p>Los Angeles</p>
+                                <div class="slider-description">
+                                    Recipes are formed for centuries,
+                                    <div class="slider-button">
+                                        <a href="/post/3YwdNX1AYQ" class="btn browse-content-btn home-menu-btn">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Bullet Navigator -->
-        <div id="breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb pull-left">
-                    <li ng-repeat="item in vm.location"><a href="#/{{item.path}}">{{item.name}}</a></li>
-                    <li class="active">{{vm.currentLocation}}</li>
-                </ol>
 
-            </div>
-        </div>
-
-    </div>
+</div>
 
     <div id="slogan">
         <div class="container">
@@ -43,4 +73,55 @@
         </div>
     </div>
 
+    <div class="content-area-container container" ng-cloak>
+        <div class="content-items">
+
+            <div id="home-page-content" class="row">
+                <div id="menu-items" ng-cloak class="col-xs-12 col-sm-4">
+                    <h3 class="title">Chef's Recommendations</h3>
+                    <div class="menu-item row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
+                        <div class="thumb col-xs-12 col-sm-4">
+                            <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
+                                <img ng-src="{{menuItem.image}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                            </a>
+                        </div>
+                        <div class="menu-item-body col-sm-8">
+                            <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
+                            <p>{{menuItem.description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="location-home" ng-cloak class="col-xs-12 col-sm-4">
+                    <h3 class="title">Location and hours of operation</h3>
+                    <div class="row">
+                        <div class="thumbnail col-xs-12 col-sm-10">
+                            <div id="map" class="map-homepage"></div>
+                        </div>
+
+                        <div class="work-time col-xs-12 col-sm-10">
+                            <span class="day title">Mon-Fri: <span class="clock">{{vm.info.mondayFriday}}</span></span>
+                            <span>&nbsp;&nbsp;&nbsp;</span>
+                            <span class="day title">Sat-Sun: <span class="clock">{{vm.info.saturdaySunday}}</span></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="testimonials" ng-cloak class="col-xs-12 col-sm-4">
+                    <h3 class="title">Customer Testimonials</h3>
+                    <div class="testimonial panel panel-default">
+                        <div class="panel-body">
+                            <div class="thumb pull-left">
+                                <img ng-src="{{vm.testimonial.customer.avatar}}" class="img-thumbnail" alt="{{vm.testimonial.customer.firstName}} {{vm.testimonial.customer.lastName}}">
+                            </div>
+                            <h3><a href="#/Home/Blog/Users/{{vm.testimonial.customer.username}}">{{vm.testimonial.customer.firstName}}&nbsp;{{vm.testimonial.customer.lastName}}</a></h3>
+                            <p>{{vm.testimonial.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
 </div>

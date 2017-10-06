@@ -1,9 +1,17 @@
+<div class="container" id="wrapper-background">
+    <div ng-cloak>
+        <h1 class="header-title">Location</h1>
+        <p class="header-body">
+            You are welcome
+        </p>
+    </div>
+</div>
 <div class="contentMain-content-area">
     <div id="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb pull-left">
-                <li ng-repeat="item in vm.location"><a href="#/{{item.path}}">{{item.name}}</a></li>
-                <li class="active">{{vm.currentLocation}}</li>
+                <li ng-repeat="item in vm.location"><a href="#/home">HOME</a></li>
+                <li class="active">LOCATION</li>
             </ol>
 
             <div class="myCuisine-search pull-right">

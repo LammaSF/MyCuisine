@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+
     <script
-            src="https://code.jquery.com/jquery-3.2.1.js"
-            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
     <script src="config/system.conf.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
@@ -20,11 +22,10 @@
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-storage.js"></script>
     <script src="config/firebase.conf.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/navigo@5.3.1/lib/navigo.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--Libraries-->
-
-
 
     <!--CSS files for some libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -72,7 +73,7 @@
                     <ul class="navbar">
                         <li class="active"><a href="#/">HOME</a></li>
                         <li><a href="#/Home/Contact">CONTACT</a></li>
-                        <li><a href="#/Home/Menu">MENU</a></li>
+                        <li><a href="#/menu">MENU</a></li>
                         <li ><a href="#/location">LOCATION</a></li>
                         <li><a href="#/Home/Blog">HOURS</a></li>
                         <li><a href="#/Home/Blog">AWARDS</a></li>
@@ -87,13 +88,8 @@
     <!-- ==================================================== -->
 
     <div id="main-content"></div><!-- end #content -->
-
     <!-- Footer -->
 
-    <br>
-    <br>
-    <br>
-    <br>
 
     <footer id="myCuisine-footer" class="nav navbar-default text-center">
         <nav class="container">
@@ -114,10 +110,30 @@
     </footer>
 
 </div><!-- end #wrapper -->
+<div id="map2"></div>
+<script>
+    function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map2'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+        });
+    }
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg2ZyEdkwKvua9PEhkWNTS7bjY5-tdXk8&callback=initMap"
+        async defer></script>
+
+<!--AIzaSyBg2ZyEdkwKvua9PEhkWNTS7bjY5-tdXk8'></script>-->
+<script>$('#myCarousel').carousel({
+    interval: 3000,
+    cycle: true
+}); </script>
 <script>
     System.import("index");
     firebase.initializeApp(config);
 </script>
+
 </body>
 
 </html>
