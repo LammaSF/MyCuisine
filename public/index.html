@@ -25,6 +25,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/navigo@5.3.1/lib/navigo.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
     <!--Libraries-->
 
     <!--CSS files for some libraries-->
@@ -50,9 +54,11 @@
                 $('.loader').fadeOut('slow', function () {
                     $(this).remove();
                 });
-            }, 1500);
+            }, 3500);
         });
     </script>
+
+
 </head>
 
 <body>
@@ -65,19 +71,19 @@
         <nav class="container nav">
             <div class = "header-menu">
                 <div class="navbar-header">
-                    <a id="logo" class="navbar-brand" href="#/">
+                    <a id="logo" class="navbar-brand" href="#">
                         <img src="images/Logo.png" class="center-block" alt="My Cuisine">
                     </a>
                 </div>
                 <div id="myCuisine-navbar-collapse">
                     <ul class="navbar">
-                        <li class="active"><a href="#/">HOME</a></li>
+                        <li class="active"><a href="#">HOME</a></li>
                         <li><a href="#/Home/Contact">CONTACT</a></li>
                         <li><a href="#/menu">MENU</a></li>
                         <li ><a href="#/location">LOCATION</a></li>
-                        <li><a href="#/Home/Blog">HOURS</a></li>
+                        <li><a href="#/articles">ARTICLES</a></li>
                         <li><a href="#/Home/Blog">AWARDS</a></li>
-                        <li><a href="#/Home/Blog">REVIEWS</a></li>
+                        <li><a href="#/reviews">REVIEWS</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,10 +131,6 @@
         async defer></script>
 
 <!--AIzaSyBg2ZyEdkwKvua9PEhkWNTS7bjY5-tdXk8'></script>-->
-<script>$('#myCarousel').carousel({
-    interval: 3000,
-    cycle: true
-}); </script>
 <script>
     System.import("index");
     firebase.initializeApp(config);

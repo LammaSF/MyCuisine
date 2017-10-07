@@ -10,7 +10,7 @@
     <div id="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb pull-left">
-                <li ng-repeat="item in vm.location"><a href="#/home">HOME</a></li>
+                <li><a href="/#">HOME</a></li>
                 <li class="active">LOCATION</li>
             </ol>
 
@@ -38,19 +38,26 @@
                     </div>
                     <div>
                         <h3 class="title">Hours of operation</h3>
-                        <p>Monday-Friday: <span>{{vm.info.mondayFriday}}</span></p>
-                        <p>Saturday-Sunday: <span>{{vm.info.saturdaySunday}}</span></p>
+                        <p>Monday-Friday: <span>10-24 h.</span></p>
+                        <p>Saturday-Sunday: <span>11-23 h.</span></p>
                     </div>
                     <div>
                         <h3 class="title">Contact Info</h3>
-                        <p>Email Address: <span>{{vm.info.email}}</span></p>
-                        <p>Telephone: <span>{{vm.info.telephone}}</span></p>
-                        <p>Fax: <span>{{vm.info.fax}}</span></p>
+                        <p>Email Address: <span>lilibabacheva@yahoo.com</span></p>
+                        <p>Telephone: <span>+359888888888</span></p>
+                        <p>Fax: <span>+359888888888</span></p>
                     </div>
                 </div>
 
                 <div ng-cloak class="thumbnail col-xs-12 col-sm-8">
-                    <div id="map" class="map-locationpage"></div>
+                    <div id="map" class="map-locationpage">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJ8m0mFmEqkARTp-nWqB3gJo&key=AIzaSyCoW01ypLvB1JFikKNHP14-I3c3XvYn1S8"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
 

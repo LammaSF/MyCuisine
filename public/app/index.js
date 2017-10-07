@@ -2,6 +2,11 @@ import {templates} from 'templates';
 
 import { homeController } from 'homeController';
 import { locationController } from 'locationController';
+import { menuController }  from 'menuController';
+import { articlesController } from 'articlesController';
+import { reviewsController } from 'reviewsController';
+
+
 
 
 const router = new Navigo(null, false, '#!');
@@ -9,16 +14,12 @@ const router = new Navigo(null, false, '#!');
 router
     .on(() => homeController.all())
     .on({
-        '/#/': () => homeController.all(),
+        '/#': () => homeController.all(),
         '/#/location': () => locationController.getPage(),
-        // '/beauty/:categorie': (params) => categoriesController(params),
-        // '/beauty/:mainCategorie/:id': (params) => singlePostController(params),
-        // '/health/:categorie': (params) => categoriesController(params),
-        // '/health/:mainCategorie/:id': (params) => singlePostController(params),
-        // '/features/:categorie': (params) => categoriesController(params),
-        // '/features/:mainCategorie/:id': (params) => singlePostController(params),
-        // '/tech/:categorie': (params) => categoriesController(params),
-        // '/tech/:mainCategorie/:id': (params) => singlePostController(params),
+        '/#/menu': () => menuController.all(),
+        '/#/articles': () => articlesController.all(),
+        '/#/reviews': () => reviewsController.all(),
+
 
     })
     .notFound(() => templates.getPage('notFound', {}))
