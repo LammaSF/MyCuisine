@@ -1,8 +1,10 @@
 import {templates} from 'templates';
 import 'bootstrap';
+import 'jquery';
 
 
 function all(){
+    $('.common-footer').css("display","none");
         templates.getPage('home');
 }
 

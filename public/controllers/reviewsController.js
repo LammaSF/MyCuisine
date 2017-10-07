@@ -3,7 +3,8 @@ import 'bootstrap';
 
 
 function all(){
-    templates.getPage('reviews');
+    templates.getPage('reviews')
+        .then(templates.getPage('common-footer'));
 }
 
 

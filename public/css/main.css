@@ -162,21 +162,52 @@ text-decoration: none;
 
 #slogan {
     font-family: LeagueGothic;
+    background-color: #fbfaf7;
+}
+
+/*search*/
+
+.myCuisine-search {
+    padding-top: 13px;
+}
+
+.myCuisine-search input {
+    margin: 5px;
+}
+
+.myCuisine-search #search-input {
+    border-radius: 20px;
+    white-space: nowrap;
+    font-style: italic;
+    padding: 8px 18px;
+    width: 180px;
+    vertical-align: middle;
+    color: #858585;
+    border: 1px solid #b1b1b1;
+    box-shadow: inset 0 2px 0 2px #e0e0e0;
+    text-shadow: 1px 1px 1px #fff;
+    background: #e0e0e0;
+    /* Old browsers */
+    background: -moz-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(to bottom, #e0e0e0 0%, #f6f6f6 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.myCuisine-search #search-input:focus {
+    outline: none;
 }
 
 
-/*footer*/
-.footer nav{
-    color: black;
-}
 
 .center{
     text-align: center;
 }
 
-#home {
-    color: red;
-    z-index: 1000;
+.home {
+   width: 100%;
 }
 
 /*main*/
@@ -241,4 +272,74 @@ text-decoration: none;
 
 .browse-content-btn:focus {
     outline: none;
+}
+
+/*footer*/
+.content-footer {
+    padding-top: 35px;
+    background-color: #fafaf6;
+}
+
+.content-footer .container .row {
+    line-height: 24px;
+    color: #442917;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d5cf9d;
+}
+
+.content-footer .container .row div {
+    padding-right: 15px;
+}
+
+.content-footer .container .row div ul {
+    margin: 0;
+    padding-left: 10px;
+}
+
+.content-footer .container .row div ul a {
+    color: #442917;
+}
+
+#myCuisine-footer {
+    padding-top: 15px;
+    background-color: #f2f1e8;
+}
+
+#myCuisine-footer nav #copiright {
+    color: #92907c;
+    padding-bottom: 25px;
+}
+
+#myCuisine-footer nav #copiright a {
+    color: #686650;
+}
+
+#myCuisine-footer nav .navbar-nav {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#myCuisine-footer nav .navbar-nav li {
+    text-transform: uppercase;
+}
+
+#myCuisine-footer nav .navbar-nav li.active a {
+    font-style: italic;
+    color: #a29d79;
+    background-color: transparent;
+}
+
+#myCuisine-footer nav .navbar-nav li a {
+    color: #442917;
+    text-decoration: none;
+}
+
+#myCuisine-footer nav .navbar-nav li a:hover {
+    color: #a29d79;
+}
+
+#myCuisine-footer nav .navbar-nav li {
+    float: none;
+    display: inline-block;
 }

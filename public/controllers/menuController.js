@@ -18,7 +18,8 @@ function all(){
         reviews.once('value', data => {
             resolve(data.val());
         })
-            .then( templates.getPage('menu'));
+            templates.getPage('menu')
+        $('.common-footer').css("display","initial");
         console.log(reviews);
 
     });
