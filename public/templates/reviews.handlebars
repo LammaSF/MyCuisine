@@ -11,8 +11,8 @@
         <div id="breadcrumbs">
             <div class="container">
                 <ol class="breadcrumb pull-left">
-                    <li ng-repeat="item in vm.location"><a href="/#">HOME</a></li>
-                    <li class="active">MENU</li>
+                    <li><a href="/#">HOME</a></li>
+                    <li class="active">REVIEWS</li>
                 </ol>
 
                 <div class="myCuisine-search pull-right">
@@ -25,25 +25,69 @@
                 </div>
             </div>
         </div>
-        <div class="content-area-container container" ng-cloak>
-            <div class="content-items">
 
-                <div id="menu-page-content" class="row" ng-cloak >
-                    <div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="category in vm.menuCategory">
-                        <h3 class="title">{{category.name}}</h3>
-                        <div class="menu-item row" ng-show="category.name === menuItem.category.name" ng-repeat="menuItem in vm.menuItems">
-                            <div class="thumb col-xs-12 col-sm-4">
-                                <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
-                                    <img ng-src="{{menuItem.image}}" class="img-thumbnail" alt="{{menuItem.title}}">
-                                    <span class="menu-item-price"><span>${{menuItem.price}}</span></span>
-                                </a>
+
+
+        <!--<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">-->
+            <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+            <!--<ol class="carousel-indicators">-->
+                <!--{{#each this}}-->
+                <!--<li data-target="#carousel" data-slide-to="{{@index}}" class="active"></li>-->
+                <!--{{/each}}-->
+
+            <!--</ol>-->
+
+            <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+            <!--<div class="carousel-inner" role="listbox">-->
+                <!--{{#each this}}-->
+                <!--<div class="item active">-->
+                    <!--<img src="{{image}}" alt="cake">-->
+                    <!--<div class="carousel-caption slider-title">-->
+                        <!--<p>{{title}}</p>-->
+                        <!--<div class="slider-description">-->
+                            <!--{{review}}-->
+                            <!--<div class="slider-button">-->
+                                <!--<a href="/post/3YwdNX1AYQ" class="btn browse-content-btn home-menu-btn">Read more</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--{{/each}}-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+                <!--<div id="carousel" class="carousel slide" data-ride="carousel">-->
+    <!--{{#each this}}-->
+    <!--<div class="testimonial panel panel-default">-->
+    <!--<div class="carousel-inner">-->
+
+                <!--<div class="carousel-item active">-->
+                    <!--<img class="d-block w-100 img-thumbnail" src="{{image}}" alt="First slide">-->
+                    <!--<h3>{{name}}</a></h3>-->
+                    <!--{{review}}-->
+                <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--{{/each}}-->
+
+        </div>
+        <div class="content-area-container container">
+            <div class="content-items">
+                <div id="testimonials" class="col-xs-12 col-sm-4">
+                    <h3 class="title">Customer Testimonials</h3>
+                    {{#each this}}
+                    <div class="testimonial panel panel-default">
+                        <h2 class="review-title">{{title}}</h2>
+                        <div class="panel-body">
+                            <div class="thumb pull-left">
+                                <img src="{{image}}" class="img-thumbnail" alt="{{name}}">
                             </div>
-                            <div class="menu-item-body col-sm-8">
-                                <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
-                                <p>{{menuItem.description}}</p>
-                            </div>
+                            <h3>{{name}}</a></h3>
+                            <p>{{review}}</p>
                         </div>
                     </div>
+                    {{/each}}
                 </div>
 
             </div><!-- end .content-items -->
