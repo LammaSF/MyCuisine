@@ -27,10 +27,11 @@
         </div>
 
     <!-- content-area -->
-
+{{@cat}}
     <div class="content-area-container container" ng-cloak>
         <div class="content-items">
             {{#each this}}
+                {{#if (eq category "cakes")}}
             <div id="menu-page-content" class="row" ng-cloak >
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -43,7 +44,7 @@
                             </a>
                         </div>
                         <div class="menu-item-body col-sm-8">
-                            <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
+                            <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{name}}</a></h3>
                             <p>{{description}}</p>
                         </div>
                     </div>
@@ -51,6 +52,7 @@
             </div>
 
         </div><!-- end .content-items -->
+                    {{/if}}
     {{/each}}
     </div>
 </div><!-- end content-area -->

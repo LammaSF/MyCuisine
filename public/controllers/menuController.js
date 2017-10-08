@@ -14,19 +14,29 @@ function getAllMenus() {
 function all(){
     // let cakes = firebase.database().ref('cakes');
     return new Promise((resolve, reject) => {
-        let reviews = firebase.database().ref('menu/cakes/');
-        console.log(reviews.toString());
+        let reviews = firebase.database().ref('menu/');
+        // console.log(reviews.toString());
     reviews.once('value', (snapshot) => {
-        let f = []
+        let f = [];
+let ind=0;
         snapshot.forEach(element => {
-            let dbElements = {
-                'description': element.val().description,
-                'price': element.val().price,
-                'image': element.val().image,
-                'category': element.parent,
+            let cat=  element.key;
+            ind+=1;
+            console.log(cat);
+            element.forEach(el=>{
 
-            };
-            f.push(dbElements);
+                let dbElements = {
+                    'description': el.val().description,
+                    'price': el.val().price,
+                    'image': el.val().image,
+                    'name': el.key,
+                    'category': cat
+
+                };
+                f.push(dbElements);
+
+            })
+
         })
         templates.getPage('menu', f);
         $('.common-footer').css("display", "initial");

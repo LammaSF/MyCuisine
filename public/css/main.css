@@ -3,10 +3,15 @@
     src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
 }
 body {
-    background-size: cover;
+    max-width: 100%;
+    margin:0 auto;
 }
 li {
     list-style-type: none;
+}
+
+#wrapper {
+    margin-top:0;
 }
 
 
@@ -156,7 +161,6 @@ text-decoration: none;
 }
 
 .carousel-indicators {
-    margin: auto;
     margin-right: 51%;
 }
 
@@ -218,7 +222,12 @@ text-decoration: none;
 /*main*/
 .content-area-container {
     background-color: #f2f0d7;
+    height: 36%;
+    margin-bottom: 10%;
+}
 
+.content-area-container p{
+    font-style: italic;
 }
 .content-area-container .content-items {
    margin-top:3%;
@@ -370,10 +379,15 @@ text-decoration: none;
 /*.lower-footer {*/
     /*background-color: red !important;*/
 /*}*/
+
+
+/*main home content*/
+
 .main-title {
     color: #cac6a1;
     font-family: "League Gothic";
     font-size: 22pt;
+
 }
 
 #home-recommend {
@@ -383,7 +397,7 @@ text-decoration: none;
 }
 
 #home-recommend .menu-item-body h3 {
-font-family: "LeagueGothic-Regular", serif;
+    font-family: "LeagueGothic-Regular", serif;
     font-size: 22pt;
     color: #442917;
     text-transform: capitalize;
@@ -402,8 +416,8 @@ font-family: "LeagueGothic-Regular", serif;
 }
 
 #home-testimonials {
-    width: 25%;
-    margin-right: 2%;
+    width: 20%;
+    margin-left: -4%;
     float: left;
     /*display: inline;*/
 }
@@ -432,6 +446,10 @@ font-family: "LeagueGothic-Regular", serif;
 
 #home-location {
     width: 25%;
+}
+
+#home-location .main-title{
+    margin-left:-3%;
 }
 
 #home-location day {
