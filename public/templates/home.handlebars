@@ -8,12 +8,13 @@
             <!--<div class="slider-image">-->
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!-- Indicators -->
+             <div class="center" style="align-content: center">
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
-
+             </div>
                     <!-- Wrapper for slides -->
                      <div class="carousel-inner" role="listbox">
                         <div class="item active">
@@ -77,26 +78,48 @@
         <div class="content-items">
 
             <div id="home-page-content" class="row">
-                <div id="menu-items" ng-cloak class="col-xs-12 col-sm-4">
-                    <h3 class="title">Chef's Recommendations</h3>
-                    <div class="menu-item row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
+                <div id="home-recommend" class="col-xs-12 col-sm-4">
+                    <h3 class="main-title">Chef's Recommendations</h3>
+                    <div class="menu-item row">
                         <div class="thumb col-xs-12 col-sm-4">
-                            <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
-                                <img ng-src="{{menuItem.image}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                            <a href="#/menu/">
+                                <img src="https://lamadeleine.com/wp-content/uploads/2014/07/LM_Story_Food_SacherTorte_Header-820x390.jpg" class="img-thumbnail" alt="{{menuItem.title}}">
                             </a>
                         </div>
                         <div class="menu-item-body col-sm-8">
-                            <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
-                            <p>{{menuItem.description}}</p>
+                            <h3><a href="#/menu/">Sacher</a></h3>
+                            <p>perfect cake sacher</p>
+                        </div>
+                    </div>
+                    <div class="menu-item row">
+                        <div class="thumb col-xs-12 col-sm-4">
+                            <a href="#/menu/">
+                                <img src="http://localhost:4500/images/slider/333634.jpg" class="img-thumbnail" alt="cake">
+                            </a>
+                        </div>
+                        <div class="menu-item-body col-sm-8">
+                            <h3><a href="#/menu/">Chocolate cake</a></h3>
+                            <p>delicious chocolate cake</p>
+                        </div>
+                    </div>
+                    <div class="menu-item row">
+                        <div class="thumb col-xs-12 col-sm-4">
+                            <a href="#/menu/">
+                                <img src="https://i0.wp.com/www.butterbaking.com/wp-content/uploads/2016/07/IMG_7365.jpg?resize=1024%2C683" class="img-thumbnail" alt="{{menuItem.title}}">
+                            </a>
+                        </div>
+                        <div class="menu-item-body col-sm-8">
+                            <h3><a href="#/menu/">Raffaello</a></h3>
+                            <p>delicious chocolate cake</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div id="location-home" ng-cloak class="col-xs-12 col-sm-4">
-                    <h3 class="title">Location and hours of operation</h3>
+                <div id="home-location" class="col-xs-12 col-sm-4">
+                    <h3 class="main-title">Location and hours of operation</h3>
                     <div class="row">
-                        <div ng-cloak class="thumbnail col-xs-12 col-sm-8">
+                        <div class="thumbnail home-map col-xs-12 col-sm-8">
                             <div id="map" class="map-locationpage">
                                 <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;">
                                     <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJ8m0mFmEqkARTp-nWqB3gJo&key=AIzaSyCoW01ypLvB1JFikKNHP14-I3c3XvYn1S8"></iframe>
@@ -112,14 +135,16 @@
                 </div>
 
 
-                <div id="testimonials" class="col-xs-12 col-sm-4">
-                    <h3 class="title">Customer Testimonials</h3>
+                <div id="home-testimonials" class="col-xs-12 col-sm-4">
+                    <h3 class="main-title">Customer Testimonials</h3>
                     <div class="testimonial panel panel-default">
                         <div class="panel-body">
                             <div class="thumb pull-left">
                                 <img src="https://imagesvc.timeincapp.com/v3/fan/image?&url=https://winteriscoming.net/files/2017/04/Tyrion-1.jpg" class="img-thumbnail" alt="Tyrion Lanister">
                             </div>
+                            <div class="name">
                             <h3>Tyrion Lannister</h3>
+                            </div>
                             <p>"Bread, and two of those little fish. And a mug of dark beer to wash it down. And bacon, burnt black."</p>
                         </div>
                     </div>
