@@ -16,3 +16,17 @@
 #menu-page-content .menu-item-price > span {
     margin: 2px;
 }
+
+.menu-title  {
+   text-transform: uppercase;
+    color: #cac6a1;
+    font-family: "League Gothic";
+}
+
+contentMain-content-area .content-items {
+    display: inline;
+}
+
+.content-items .tarts {
+    float:right;
+}

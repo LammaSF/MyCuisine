@@ -268,8 +268,9 @@ text-decoration: none;
 
 .testimonial h3 {
     font-size: 22pt;
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     color: #442917;
+    /*box-shadow: 3px 4px 5px 0px rgba(68, 48, 23, 0.75);*/
 }
 
 .testimonial p {

@@ -1,17 +1,17 @@
 <div class="container" id="wrapper-background">
-    <div ng-cloak>
+    <div>
         <h1 class="header-title">OUR MENU</h1>
         <p class="header-body">
-            Cakes, tarts, chocholates make our life sweet
+            Cakes, tarts, chocolates make our life sweet
         </p>
     </div>
 </div>
 <div class="contentMain-content-area">
-    <div class="contentMain-content-area">
+
         <div id="breadcrumbs">
             <div class="container">
                 <ol class="breadcrumb pull-left">
-                    <li ng-repeat="item in vm.location"><a href="/#">HOME</a></li>
+                    <li><a href="/#">HOME</a></li>
                     <li class="active">MENU</li>
                 </ol>
 
@@ -27,24 +27,27 @@
         </div>
 
     <!-- content-area -->
-{{@cat}}
-    <div class="content-area-container container" ng-cloak>
-        <div class="content-items">
+
+    <div class="content-area-container container" >
+
+
+        <div class="content-items cakes">
+        <h3 class="menu-title cakes-title">CAKES</h3>
             {{#each this}}
                 {{#if (eq category "cakes")}}
-            <div id="menu-page-content" class="row" ng-cloak >
+            <div id="menu-page-content" class="row">
 
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    <h3 class="title">{{category}}</h3>
+
                     <div class="menu-item row">
                         <div class="thumb col-xs-12 col-sm-4">
-                            <a href="#/Home/Menu/{{menu}}/{{menuItem.title}}">
-                                <img src="{{image}}" class="img-thumbnail" alt="{{menuItem.title}}">
+
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
                                 <span class="menu-item-price"><span>${{price}}</span></span>
-                            </a>
+
                         </div>
                         <div class="menu-item-body col-sm-8">
-                            <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{name}}</a></h3>
+                            <h3>{{name}}</h3>
                             <p>{{description}}</p>
                         </div>
                     </div>
@@ -53,7 +56,54 @@
 
         </div><!-- end .content-items -->
                     {{/if}}
+
     {{/each}}
-    </div>
+            <div class="content-items pancakes">
+        <h3 class="menu-title pancakes-title">pancakes</h3>
+        {{#each this}}
+            {{#if (eq category "pancakes")}}
+                <div id="menu-page-content" class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="menu-item row">
+                            <div class="thumb col-xs-12 col-sm-4">
+                                    <img src="{{image}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                                    <span class="menu-item-price"><span>${{price}}</span></span>
+
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div><!-- end .content-items -->
+            {{/if}}
+        {{/each}}
+            </div>
+            <div class="content-items tarts">
+        <h3 class="menu-title tarts-title">tarts</h3>
+        {{#each this}}
+            {{#if (eq category "tarts")}}
+                <div id="menu-page-content" class="row" ng-cloak >
+
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="menu-item row">
+                            <div class="thumb col-xs-12 col-sm-4">
+                                    <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                    <span class="menu-item-price"><span>${{price}}</span></span>
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+            </div><!-- end .content-items -->
+            {{/if}}
+        {{/each}}
+            </div>
 </div><!-- end content-area -->
 </div>

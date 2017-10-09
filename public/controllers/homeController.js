@@ -31,13 +31,10 @@ function all(){
 }
 
 
-function getByPage(){
 
-}
 
 let homeControl = {
     all,
-    getByPage
 }
 
 export { homeControl as homeController }
