@@ -170,8 +170,10 @@ text-decoration: none;
 /*slogan*/
 
 #slogan {
-    font-family: LeagueGothic;
-    background-color: #fbfaf7;
+    min-height: 110px;
+    text-shadow: 1px 1px 1px #fff;
+    border-bottom: 1px solid rgba(101, 78, 45, .2);;
+    background-color: #fbfbf8;
 }
 
 /*search*/
@@ -195,7 +197,7 @@ text-decoration: none;
     border: 1px solid #b1b1b1;
     box-shadow: inset 0 2px 0 2px #e0e0e0;
     text-shadow: 1px 1px 1px #fff;
-    background: #e0e0e0;
+    background: lightgrey;
     /* Old browsers */
     background: -moz-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);
     /* FF3.6-15 */
@@ -217,13 +219,14 @@ text-decoration: none;
 
 .home {
    width: 100%;
+
 }
 
 /*main*/
 .content-area-container {
     background-color: #f2f0d7;
     height: 36%;
-    margin-bottom: 10%;
+
 }
 
 .content-area-container p{
@@ -240,7 +243,7 @@ text-decoration: none;
 }
 
 #location-home #map {
-    height: 150px;
+    height: 400px;
 }
 
 #location-home .work-time {
@@ -275,26 +278,20 @@ text-decoration: none;
 
 .testimonial p {
     font-size: 12pt;
-    font-family: Georgia;
+    font-family: Georgia, serif;
     color: #92907c;
 }
 
-.browse-content-btn {
-    border-radius: 18px;
-    border: 1px solid rgba(65, 58, 39, 0.8);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
-    color: #fff;
-    text-align: center;
-    font-style: normal;
-    font-size: 1.3em;
-    background: #88b467;
+#btn-browse-menu .browse-content-btn {
+    background-color: #cac6a1;
+    background: #c1bb8c;
     /* Old browsers */
-    /*background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);*/
-    /*!* FF3.6-15 *!*/
-    /*background: -webkit-radial-gradient(top, #88b467 0%, #698d4d 100%);*/
-    /*!* Chrome10-25,Safari5.1-6 *!*/
-    /*background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);*/
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -moz-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(to bottom, #c1bb8c 0%, #9b9773 100%);
+
 }
 
 .browse-content-btn.home-menu-btn {
@@ -309,7 +306,7 @@ text-decoration: none;
 /*footer*/
 #myCuisine-footer {
     padding-top: 35px;
-    background-color: #ffffff;
+    background-color: #f2f1e8;
 }
 
 .content-footer .container .row {
@@ -334,7 +331,7 @@ text-decoration: none;
 
 #myCuisine-footer {
     padding-top: 15px;
-    background-color: #ffffff;
+    background-color: #f2f1e8;
     color: #442917;
 }
 
@@ -343,39 +340,41 @@ text-decoration: none;
     padding-bottom: 25px;
 }
 
-#myCuisine-footer nav #copiright a {
+#myCuisine-footer nav #copyright a {
     color: #686650;
 }
 
-#myCuisine-footer nav .navbar-nav {
+#myCuisine-footer nav .lower-footer {
     margin: 0;
     width: 100%;
     text-align: center;
+    display: inline-block;
 }
 
-#myCuisine-footer nav .navbar-nav li {
+#myCuisine-footer nav .lower-footer li {
     text-transform: uppercase;
+    display: inline-block;
 }
 
-#myCuisine-footer nav .navbar-nav li.active a {
+#myCuisine-footer nav .lower-footer li.active a {
     font-style: italic;
     color: #a29d79;
     background-color: transparent;
 }
 
-#myCuisine-footer nav .navbar-nav li a {
+#myCuisine-footer nav .lower-footer li a {
     color: #442917;
     text-decoration: none;
 }
 
-#myCuisine-footer nav .navbar-nav li a:hover {
+#myCuisine-footer nav .lower-footer li a:hover {
     color: #a29d79;
 }
 
-#myCuisine-footer nav .navbar-nav li {
-    float: none;
-    display: inline-block;
-}
+/*#myCuisine-footer nav .navbar-nav li {*/
+    /*float: none;*/
+    /*display: inline-block;*/
+/*}*/
 
 /*.lower-footer {*/
     /*background-color: red !important;*/
