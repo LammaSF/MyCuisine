@@ -1,5 +1,5 @@
 @font-face {
-    font-family: LigueGothic;
+    font-family: LeagueGothic;
     src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
 }
 body {
@@ -52,8 +52,9 @@ li {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    margin-top: 3%;
+    margin-top: 4%;
     padding-right: 100px;
+    right: 17%;
 }
 
 #myCuisine-navbar-collapse li {
@@ -123,15 +124,17 @@ text-decoration: none;
 
     /*style="cursor: default; position: relative; top: 0; left: 0; height: 500px; overflow: hidden;"*/
 }
+.carousel-caption .btn {
+
+}
 
 .slider-title {
-    font-family: "LeagueGothic-Regular", serif;
+    font-family: "LeagueGothic", serif;
     font-style: normal;
     color: white;
     text-transform: uppercase;
     position: absolute;
     margin-top: 50%;
-    margin-left: -63%;
 
     padding-left: 15%;
     /*width: 100%;*/
@@ -148,7 +151,7 @@ text-decoration: none;
     padding-left: 15%;
     text-transform: none;
     font-size: 14pt;
-    font-family: "LeagueGothic-Regular", serif;
+    font-family: "LeagueGothic", serif;
     position: relative;
     margin-left: -21%;
     /*width: 100%;*/
@@ -172,7 +175,7 @@ text-decoration: none;
 #slogan {
     min-height: 110px;
     text-shadow: 1px 1px 1px #fff;
-    border-bottom: 1px solid rgba(101, 78, 45, .2);;
+    border-bottom: 1px solid rgba(101, 78, 45, .2);
     background-color: #fbfbf8;
 }
 
@@ -224,7 +227,7 @@ text-decoration: none;
 
 /*main*/
 .content-area-container {
-    background-color: #f2f0d7;
+    background-color: #f5f3da;
     height: 36%;
 
 }
@@ -236,7 +239,7 @@ text-decoration: none;
    margin-top:3%;
 }
 .content-area-container .content-items a {
-    font-family: "LeagueGothic-Regular", serif;
+    font-family: "LeagueGothic", serif;
     font-style: normal;
     color: #442917;
     letter-spacing: -1px;
@@ -246,16 +249,20 @@ text-decoration: none;
     height: 400px;
 }
 
-#location-home .work-time {
+#home-location .work-time {
     padding: 0;
 }
 
-#location-home .work-time .day {
-    font-size: 1.5em;
+#home-location .work-time .day {
+    font-size: 18pt;
+    color: #cac6a1;
+    font-family: "LeagueGothic", serif;
+    text-transform: uppercase;
 }
 
-#location-home .work-time .clock {
+#home-location .work-time .clock {
     color: #442917;
+    font-size: 14pt;
 }
 
 #testimonials .testimonial {
@@ -271,7 +278,7 @@ text-decoration: none;
 
 .testimonial h3 {
     font-size: 22pt;
-    font-family: "League Gothic", serif;
+    font-family: "LeagueGothic", serif;
     color: #442917;
     /*box-shadow: 3px 4px 5px 0px rgba(68, 48, 23, 0.75);*/
 }
@@ -282,20 +289,31 @@ text-decoration: none;
     color: #92907c;
 }
 
-#btn-browse-menu .browse-content-btn {
-    background-color: #cac6a1;
-    background: #c1bb8c;
-    /* Old browsers */
-    background: -moz-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -radial-gradient(to bottom, #c1bb8c 0%, #9b9773 100%);
+#btn-browse-menu{
+    background-color: #f5f3da;
+}
 
+.browse-content-btn {
+    border-radius: 18px;
+    border: 1px solid rgba(65, 58, 39, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black !important;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.3em;
+    background: #88b467;
+    margin-bottom: -12px;
+    /* Old browsers */
+    /*background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);*/
+    /*!* FF3.6-15 *!*/
+    /*background: -webkit-radial-gradient(top, #88b467 0%, #698d4d 100%);*/
+    /*!* Chrome10-25,Safari5.1-6 *!*/
+    /*background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);*/
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .browse-content-btn.home-menu-btn {
-    width: 250px !important;
+    /*width: 250px !important;*/
     overflow: hidden;
 }
 
@@ -307,6 +325,7 @@ text-decoration: none;
 #myCuisine-footer {
     padding-top: 35px;
     background-color: #f2f1e8;
+    border-top: 1px solid rgba(101, 78, 45, .2);
 }
 
 .content-footer .container .row {
@@ -333,6 +352,7 @@ text-decoration: none;
     padding-top: 15px;
     background-color: #f2f1e8;
     color: #442917;
+    font-family: Georgia, Serif;
 }
 
 #myCuisine-footer nav #copyright {
@@ -344,30 +364,30 @@ text-decoration: none;
     color: #686650;
 }
 
-#myCuisine-footer nav .lower-footer {
+.lower-footer {
     margin: 0;
     width: 100%;
     text-align: center;
     display: inline-block;
 }
 
-#myCuisine-footer nav .lower-footer li {
+.lower-footer li {
     text-transform: uppercase;
     display: inline-block;
 }
 
-#myCuisine-footer nav .lower-footer li.active a {
+.lower-footer li.active a {
     font-style: italic;
     color: #a29d79;
     background-color: transparent;
 }
 
-#myCuisine-footer nav .lower-footer li a {
+.lower-footer li a {
     color: #442917;
     text-decoration: none;
 }
 
-#myCuisine-footer nav .lower-footer li a:hover {
+#myCuisine-footer .lower-footer li a:hover {
     color: #a29d79;
 }
 
@@ -385,25 +405,41 @@ text-decoration: none;
 
 .main-title {
     color: #cac6a1;
-    font-family: "League Gothic";
+    font-family: "LeagueGothic", serif;
     font-size: 22pt;
+    text-transform: uppercase;
+}
 
+#btn-browse-menu .btn {
+ background-color: #a39e7a;
 }
 
 #home-recommend {
-    width: 25%;
+    width: 24%;
     margin-left: 17%;
     /*margin-top: 10%;*/
 }
 
 #home-recommend .menu-item-body h3 {
-    font-family: "LeagueGothic-Regular", serif;
+    font-family: "LeagueGothic", serif;
     font-size: 22pt;
     color: #442917;
     text-transform: capitalize;
+    /*margin-left: -1px;*/
+    margin-top: 23px;
 
 }
 
+#home-recommend .thumb {
+    /*width: 27%;*/
+    margin-right:-15%;
+    margin-bottom: 2%;
+}
+
+.thumb img {
+    height: 70px;
+    width: 70px;
+}
 #home-recommend .menu-item-body {
     margin-top:-6%;
 }
@@ -413,11 +449,12 @@ text-decoration: none;
     font-family: Georgia;
     color: #92907c;
     margin-top:-4%;
+    /*margin-left: -5%;*/
 }
 
 #home-testimonials {
     width: 20%;
-    margin-left: -4%;
+    margin-left: 0%;
     float: left;
     /*display: inline;*/
 }
@@ -445,7 +482,7 @@ text-decoration: none;
 }
 
 #home-location {
-    width: 25%;
+    width: 24%;
 }
 
 #home-location .main-title{
@@ -457,7 +494,9 @@ text-decoration: none;
     font-family: Georgia;
     color: #92907c;
 }
-#home-map {
-    width: 25%;
+.home-map {
+    width: 75%;
+    height: 75%;
+    margin-bottom: 3px;
 }
 
