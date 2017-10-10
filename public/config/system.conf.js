@@ -19,8 +19,10 @@ SystemJS.config({
 
         //Libraries\\
         "jquery": "https://code.jquery.com/jquery-3.2.1.min.js",
-
-
+        "gulp": "https://cdnjs.cloudflare.com/ajax/libs/gulp/3.8.5/gulp.js",
+        "gulp-load-plugins": "https://cdn.jsdelivr.net/npm/@bretkikehara/gulp-load-plugins@1.5.0-alpha/index.js",
+        "minify": "https://cdn.jsdelivr.net/npm/gulp-minify@1.0.0/index.min.js",
+        "plumber":"https://cdn.jsdelivr.net/npm/gulp-plumber@1.1.0/index.min.js",
 
         //HTML:
         "handlebars": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js",
@@ -31,6 +33,7 @@ SystemJS.config({
         //UI stuffs (autocomplete, calendar etc.)
         "jqueryUi": "https://code.jquery.com/ui/1.12.1/jquery-ui.js",
         "bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+        "bootstrap-theme": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css",
 
         paths: {
             "google-maps": "https://maps.googleapis.com/maps/api/js"

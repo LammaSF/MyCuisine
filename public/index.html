@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <script
@@ -30,16 +29,18 @@
             integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
             crossorigin="anonymous"></script>
     <!--Libraries-->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--CSS files for some libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!--<link rel="stylesheet" href="../node_modules/jquery-ui-dist/jquery-ui.css">-->
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/location.css">
-    <link rel="stylesheet" href="./css/articles.css">
-    <link rel="stylesheet" href="./css/menu-page.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/menu-page.css">
 
     <!--<link rel="shortcut icon" type="image/png" href="./images/1458232566162.png"/>-->
 
@@ -80,7 +81,16 @@
                 <div id="myCuisine-navbar-collapse">
                     <ul class="navbar">
                         <li class="active"><a href="#">HOME</a></li>
-                        <li><a href="#/menu">MENU</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/all-menu">All</a></li>
+                                <li><a href="/breakfast-menu">Breakfast menu</a></li>
+                                <li><a href="/lunch-menu">Lunch menu</a></li>
+                                <li><a href="/dinner-menu">Dinner menu</a></li>
+                            </ul>
+                        </li>
+
                         <li ><a href="#/location">LOCATION</a></li>
                         <li><a href="#/articles">ARTICLES</a></li>
                         <li><a href="#/reviews">REVIEWS</a></li>
