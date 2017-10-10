@@ -1,3 +1,13 @@
+@font-face {
+    font-family: LeagueGothic;
+    src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
+}
+
+@font-face {
+    font-family: HelveticaBold;
+    src: url('../fonts/Helvetica-Bold.otf') format("opentype");
+}
+
 /*menu wrapper*/
 
 #wrapper-background {
@@ -14,8 +24,21 @@
     color: #fff;
 }
 
+.page-title {
+    padding-left: 16%;
+}
 .contentMain-header .header-title {
     padding-top: 30px !important;
+    text-transform: uppercase;
+}
+
+.header-title .header-body {
+    color: #dacba7 !important;
+    font-family: HelveticaBold, sans-serif;
+}
+
+.content-area-container #location-page-content p {
+    font-style: normal;
 }
 
 .contentMain-header #myCuisineCarousel > div {
@@ -31,7 +54,7 @@
 }
 
 .contentMain-content-area {
-    background-color: #f2f0d7;
+    background-color: #f5f3da;;
 }
 
 .contentMain-content-area #breadcrumbs {
@@ -70,6 +93,11 @@
     /*!* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
 }
 
+.myCuisine-search #search-button {
+    outline: none;
+    margin-top: -12px !important;
+}
+
 .contentMain-content-area #breadcrumbs .container .myCuisine-search #search-input:focus {
     outline: none;
 }
@@ -100,9 +128,14 @@
 .contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
     color: #442917;
 }
+.contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail {
+    /*width: 00px;*/
+
+}
 
 .contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
     height: 400px;
+
 }
 
 .contentMain-content-area .content-area-container .content-items #location-page-content p {
@@ -137,4 +170,11 @@
 .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h1, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h6 {
     margin: 0;
     padding: 0;
+}
+
+#location-page-content h3 {
+    font-family: LeagueGothic, serif;
+    font-size: 22pt;
+    color: #cac6a1;
+    text-transform: uppercase;
 }

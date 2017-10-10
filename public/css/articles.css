@@ -20,7 +20,7 @@
 }
 
 #blog-page-content .post-comments .thumb {
-    margin-bottom: 20px;
+    padding-bottom: 2px;
 }
 
 #blog-page-content .post-comments .comment div:nth-child(2) {
@@ -45,8 +45,16 @@
     color: #6c634b;
 }
 
-#blog-page-content .img {
+#blog-page-content .thumb img {
     margin-right: 2%;
+    width: 200px;
+    height: 200px;
+}
+
+.post-comments .row .comment .thumb img {
+    margin-right: 2%;
+
+    height: 100px !important;
 }
 
 #mycuisin-aside h3 {
@@ -54,4 +62,13 @@
     font-family: "LeagueGothic-Regular", serif;
     text-transform: uppercase;
     font-size: 22pt;
+}
+
+.panel-body .row .comment {
+    margin-right: 20%;
+
+}
+
+.article-btn {
+    margin-bottom: 5px;
 }

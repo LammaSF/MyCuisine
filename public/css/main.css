@@ -25,6 +25,8 @@ li {
     list-style-type: none;
 }
 
+
+
 #wrapper {
     margin-top:0;
 }
@@ -53,6 +55,10 @@ li {
     margin-left:15%;
     box-shadow: -3px 3px 3px black;
     /*width: 100%;*/
+}
+
+.header-title {
+    margin-top: 15% !important;
 }
 
 /*nav*/
@@ -260,9 +266,8 @@ border-bottom: 10px inset #8e8778;
 
 /*main*/
 .content-area-container {
-    background-color: #f5f3da;
     height: 36%;
-
+    background-color: #f5f3da;
 }
 
 .content-area-container p{

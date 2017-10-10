@@ -23,6 +23,7 @@ SystemJS.config({
         "gulp-load-plugins": "https://cdn.jsdelivr.net/npm/@bretkikehara/gulp-load-plugins@1.5.0-alpha/index.js",
         "minify": "https://cdn.jsdelivr.net/npm/gulp-minify@1.0.0/index.min.js",
         "plumber":"https://cdn.jsdelivr.net/npm/gulp-plumber@1.1.0/index.min.js",
+        "gulp-imagemin": "../../node_modules/gulp-imagemin/index.js",
 
         //HTML:
         "handlebars": "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js",
