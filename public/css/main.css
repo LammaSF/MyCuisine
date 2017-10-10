@@ -378,14 +378,14 @@ border-bottom: 10px inset #8e8778;
 }
 
 #myCuisine-footer ul a {
-    color: #442917 !important;
+    color: #442917;
 }
 
 #myCuisine-footer {
     padding-top: 15px;
     background-color: #f2f1e8;
     color: #442917;
-    font-family: Georgia, Serif;
+    font-family: Georgia, serif;
 }
 
 #myCuisine-footer nav #copyright {
@@ -402,18 +402,15 @@ border-bottom: 10px inset #8e8778;
     width: 100%;
     text-align: center;
     display: inline-block;
+
 }
 
 .lower-footer li {
     text-transform: uppercase;
     display: inline-block;
+    margin-right: 5px;
 }
 
-.lower-footer li.active a {
-    font-style: italic;
-    color: #a29d79;
-    background-color: transparent;
-}
 
 .lower-footer li a {
     color: #442917;
@@ -421,7 +418,8 @@ border-bottom: 10px inset #8e8778;
 }
 
 #myCuisine-footer .lower-footer li a:hover {
-    color: #a29d79;
+    color: #cac6a1;
+    font-style: italic;
 }
 
 /*#myCuisine-footer nav .navbar-nav li {*/
