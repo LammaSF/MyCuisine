@@ -6,104 +6,126 @@
         </p>
     </div>
 </div>
-<div class="contentMain-content-area">
+<div class="contentMain-content-area menus">
 
-        <div id="breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb pull-left">
-                    <li><a href="/#">HOME</a></li>
-                    <li class="active">MENU</li>
-                </ol>
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li><a href="/#">HOME</a></li>
+                <li class="active">MENU</li>
+            </ol>
 
-                <div class="myCuisine-search pull-right">
-                    <form method="get" id="searchform" action="">
+            <div class="myCuisine-search pull-right">
+                <form method="get" id="searchform" action="">
 
-                        <input type="text" id="search-input" class="" name="searchInput" placeholder="Search this website...">
+                    <input type="text" id="search-input" class="" name="searchInput"
+                           placeholder="Search this website...">
 
-                        <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
-                    </form>
-                </div>
+                    <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
+                </form>
             </div>
         </div>
+    </div>
 
     <!-- content-area -->
 
-    <div class="content-area-container container" >
+    <div class="content-area-container container menu">
 
 
-        <div class="content-items cakes">
-        <h3 class="menu-title cakes-title">CAKES</h3>
-            {{#each this}}
-                {{#if (eq category "cakes")}}
-            <div id="menu-page-content" class="row">
+        <div class="content-items">
+            <!--<div id="menu-page-content" class="row">-->
+            <div class="col-xs-12 col-sm-4 cakes">
+                <h3 class="main-title">CAKES</h3>
+                {{#each this}}
+                    {{#if (eq category "cakes")}}
+                        <div id="menu-page-content" class="menu-item row">
 
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                            <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
 
-                    <div class="menu-item row">
-                        <div class="thumb col-xs-12 col-sm-4">
+                            <!--<div class="menu-item row">-->
+                            <div class="thumb col-xs-12 col-sm-4">
 
                                 <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
                                 <span class="menu-item-price"><span>${{price}}</span></span>
 
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
-                        <div class="menu-item-body col-sm-8">
-                            <h3>{{name}}</h3>
-                            <p>{{description}}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div><!-- end .content-items -->
+                        <!-- end .content-items -->
                     {{/if}}
 
-    {{/each}}
-            <div class="content-items pancakes">
-        <h3 class="menu-title pancakes-title">pancakes</h3>
-        {{#each this}}
-            {{#if (eq category "pancakes")}}
-                <div id="menu-page-content" class="row">
+                {{/each}}
+            </div>
+            <!--</div>-->
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="menu-item row">
+
+            <div class="col-xs-12 col-sm-4 pancakes">
+                <h3 class="main-title">PANCAKES</h3>
+                {{#each this}}
+                    {{#if (eq category "pancakes")}}
+                        <div id="menu-page-content" class="menu-item row">
+
+                            <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
+
+                            <!--<div class="menu-item row">-->
                             <div class="thumb col-xs-12 col-sm-4">
-                                    <img src="{{image}}" class="img-thumbnail" alt="{{menuItem.title}}">
-                                    <span class="menu-item-price"><span>${{price}}</span></span>
+
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                <span class="menu-item-price"><span>${{price}}</span></span>
 
                             </div>
                             <div class="menu-item-body col-sm-8">
                                 <h3>{{name}}</h3>
                                 <p>{{description}}</p>
                             </div>
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
-                    </div>
 
-            </div><!-- end .content-items -->
-            {{/if}}
-        {{/each}}
+                        <!-- end .content-items -->
+                    {{/if}}
+
+                {{/each}}
             </div>
-            <div class="content-items tarts">
-        <h3 class="menu-title tarts-title">tarts</h3>
-        {{#each this}}
-            {{#if (eq category "tarts")}}
-                <div id="menu-page-content" class="row" >
 
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="menu-item row">
+
+            <div class="col-xs-12 col-sm-4 tarts">
+                <h3 class="main-title">TARTS</h3>
+                {{#each this}}
+                    {{#if (eq category "tarts")}}
+                        <div id="menu-page-content" class="menu-item row">
+
+                            <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
+
+                            <!--<div class="menu-item row">-->
                             <div class="thumb col-xs-12 col-sm-4">
-                                    <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
-                                    <span class="menu-item-price"><span>${{price}}</span></span>
+
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                <span class="menu-item-price"><span>${{price}}</span></span>
+
                             </div>
                             <div class="menu-item-body col-sm-8">
                                 <h3>{{name}}</h3>
                                 <p>{{description}}</p>
                             </div>
+                            <!--</div>-->
+                            <!--</div>-->
                         </div>
-                    </div>
 
-            </div><!-- end .content-items -->
-            {{/if}}
-        {{/each}}
+                        <!-- end .content-items -->
+                    {{/if}}
+
+                {{/each}}
             </div>
+        </div>
+    </div>
 </div><!-- end content-area -->
+</div>
+</div>
 </div>

@@ -1,0 +1,25 @@
+.review-item {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.review {
+    margin:auto;
+    color: #5d261c;
+}
+
+.review .row h3, p {
+    margin-left: 13%;
+    margin-top: -2%;
+}
+
+.review-title {
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size: 22pt;
+    margin-left: 5%;
+}
+
+.container .review {
+    margin: 0 auto;
+}

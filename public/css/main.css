@@ -103,14 +103,16 @@ li {
     height: 65px;
     padding-top: 25px;
     text-decoration: none;
+    background-color: transparent;
 }
 #myCuisine-navbar-collapse li a:focus{
     /*font-style: italic;*/
     /*height: 65px;*/
     /*padding-top: 25px;*/
 /*text-decoration: none;*/
+    background-color: transparent;
 line-height: 3px;
-border-top: 50px inset #8e8778;
+
 border-bottom: 10px inset #8e8778;
 -moz-border-top-colors: #8e8778;
 -moz-border-bottom-colors: #8e8778; }
@@ -129,11 +131,30 @@ border-bottom: 10px inset #8e8778;
 .navbar-header{
     display:inline;
 }
-.navbar .dropdown-menu {
+
+nav {
+    z-index: 1; }
+.open>.dropdown-menu {
+    display: block;
+}
+/*.navbar-toggle {*/
+    /*margin-top: 15px; }*/
+ul.dropdown-menu {
+    position: absolute;
+    background-color: #6c634b;
+    top: 100%;
+    left: 0;
     z-index: 1000;
-    background: #e7e7e7;
-    border: none;
-    padding-bottom: 30px;
+height: 300px;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+
 }
 
 .navbar .dropdown-menu li a {
@@ -427,14 +448,12 @@ border-bottom: 10px inset #8e8778;
     font-style: italic;
 }
 
-/*#myCuisine-footer nav .navbar-nav li {*/
-    /*float: none;*/
-    /*display: inline-block;*/
-/*}*/
+#myCuisine-footer h3 {
+    color: #cac6a1;
+    text-transform: uppercase;
+    font-family: LeagueGothic, serif;
+}
 
-/*.lower-footer {*/
-    /*background-color: red !important;*/
-/*}*/
 
 
 /*main home content*/
@@ -456,19 +475,39 @@ border-bottom: 10px inset #8e8778;
     /*margin-top: 10%;*/
 }
 
-#home-recommend .menu-item-body h3 {
+.menu-item-body h3 {
     font-family: "LeagueGothic", serif;
     font-size: 22pt;
     color: #442917;
     text-transform: capitalize;
     /*margin-left: -1px;*/
-    margin-top: 23px;
+    margin-top: 26px;
 
 }
 
-#home-recommend .thumb {
+.menu-item-body h3 {
+    font-family: "LeagueGothic", serif;
+    font-size: 22pt;
+    color: #442917;
+    text-transform: capitalize;
+    /*margin-left: -1px;*/
+    margin-top: 26px;
+
+}
+
+.menus .menu-item-body h3  {
+    font-family: "LeagueGothic", serif;
+    font-size: 22pt;
+    color: #442917;
+    text-transform: capitalize;
+    /*margin-left: -1px;*/
+    margin-top: 6px !important;
+
+}
+
+.thumb {
     /*width: 27%;*/
-    margin-right:-15%;
+    margin-right:-14%;
     margin-bottom: 2%;
 }
 

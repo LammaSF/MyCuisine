@@ -1,11 +1,52 @@
-#menu-page-content .menu-item-price {
+@font-face {
+    font-family: LeagueGothic;
+    src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
+}
+
+/*#menu-page-content .menu-item-price {*/
+    /*display: block;*/
+    /*position: absolute;*/
+    /*background: url(../images/PriceLabel.png) no-repeat bottom left;*/
+    /*top: 12px;*/
+    /*left: -8px;*/
+    /*font-size: 18px;*/
+    /*padding-left: 8px;*/
+    /*color: white;*/
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;*/
+    /*letter-spacing: 1px;*/
+    /*padding: 3px;*/
+    /*padding-bottom: 8px;*/
+/*}*/
+
+/*#menu-page-content .menu-item-price > span {*/
+    /*margin: 2px;*/
+/*}*/
+
+/*.menu-title  {*/
+   /*text-transform: uppercase;*/
+    /*color: #cac6a1;*/
+    /*font-family: "LeagueGothic";*/
+/*}*/
+
+
+.cakes {
+    float: left;
+    display: inline-block;
+    margin-left: 17%;
+}
+.pancakes {
+    float: right;
+    display: inline-block;
+}
+
+.menu-item .menu-item-price {
     display: block;
     position: absolute;
     background: url(../images/PriceLabel.png) no-repeat bottom left;
     top: 12px;
     left: -8px;
     font-size: 18px;
-    padding-left: 8px;
+    /*padding-left: 8px;*/
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
     letter-spacing: 1px;
@@ -13,20 +54,25 @@
     padding-bottom: 8px;
 }
 
-#menu-page-content .menu-item-price > span {
-    margin: 2px;
+.menu {
+    height: 80% !important;
+    width: 100%;
+    padding-bottom:150px;
 }
 
-.menu-title  {
-   text-transform: uppercase;
-    color: #cac6a1;
-    font-family: "League Gothic";
+.cakes, .tarts, .pancakes {
+    width: 25%;
+
+    /*margin-top: 10%;*/
+}
+.cakes {
+    margin-left: 17%;
 }
 
-contentMain-content-area .content-items {
-    display: inline;
+.pancakes {
+    margin-right: 5%;
 }
 
-.content-items .tarts {
-    float:right;
+.tarts {
+    margin-left: 2%;
 }

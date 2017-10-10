@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -30,7 +30,7 @@
             crossorigin="anonymous"></script>
     <!--Libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--CSS files for some libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="css/location.css">
     <link rel="stylesheet" href="css/articles.css">
     <link rel="stylesheet" href="css/menu-page.css">
+    <link rel="stylesheet" href="css/reviews.css">
 
     <!--<link rel="shortcut icon" type="image/png" href="./images/1458232566162.png"/>-->
 
@@ -79,18 +80,19 @@
                     </a>
                 </div>
                 <div id="myCuisine-navbar-collapse">
-                    <ul class="navbar">
+                    <ul class="navbar nav navbar-nav">
                         <li class="active"><a href="#">HOME</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/all-menu">All</a></li>
-                                <li><a href="/breakfast-menu">Breakfast menu</a></li>
-                                <li><a href="/lunch-menu">Lunch menu</a></li>
-                                <li><a href="/dinner-menu">Dinner menu</a></li>
-                            </ul>
-                        </li>
+                        <li class="active"><a href="#/menu">MENU</a></li>
+                        <!--<li class="dropdown">-->
+                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENU <span class="caret"></span></a>-->
+                            <!--<ul class="dropdown-menu">-->
+                                <!--<li><a href="/#/menu/cakes">CAKES</a></li>-->
+                                <!--<li><a href="/#/menu">All</a></li>-->
 
+                                <!--<li><a href="/#/menu/tarts">TARTS</a></li>-->
+                                <!--<li><a href="/#/menu/pancakes">PANCAKES</a></li>-->
+                            <!--</ul>-->
+                        </li>
                         <li ><a href="#/location">LOCATION</a></li>
                         <li><a href="#/articles">ARTICLES</a></li>
                         <li><a href="#/reviews">REVIEWS</a></li>
@@ -113,9 +115,9 @@
             <div class="common-footer">
                 <div class="row recent-data">
                     <div class="col-xs-12 col-sm-4">
-                        <h3><img src="images/Logo.png" alt="My Cuisine"></h3>
+                        <h3><img src="images/LogoFooter.png" alt="My Cuisine"></h3>
                         <div>
-                            Donec placerat sodales aliquet. Vivamus neque nulla, fermentum id ultrices at, vulputate et risus. Aenean non lectus ipsum. Curabitur sagittis urna vel elit euismod faucibus. Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Mauris suscipit, dolor et tristique scelerisque, leo neque congue libero, mollis accumsan nulla
+                            Donec placerat sodales aliquet. Vivamus neque nulla, fermentum id ultrices at, vulputate et risus. Aenean non lectus ipsum. Curabitur sagittis urna vel elit euismod faucibus. Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Mauris suscipit, dolor et tristique scelerisque, leo neque congue libero, mollis accumsan
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4">
@@ -133,7 +135,7 @@
                     <div class="col-xs-12 col-sm-4">
                         <h3 class="title">Text widget</h3>
                         <div>
-                            Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Donec placerat sodales aliquet. Vivamus neque nulla, fermentum id ultrices at, vulputate et risus. Aenean non lectus ipsum. Curabitur sagittis urna vel elit euismod faucibus. Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Mauris suscipit, dolor et tristique scelerisque, leo neque congue libero, mollis accumsan nulla
+                            Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Donec placerat sodales aliquet. Vivamus neque nulla, fermentum id ultrices at, vulputate et risus. Aenean non lectus ipsum. Curabitur sagittis urna vel elit euismod faucibus. Aliquam sed magna id dolor cursus ullamcorper ut commodo nunc. Mauris suscipit, dolor et
                         </div>
                     </div>
                 </div>
