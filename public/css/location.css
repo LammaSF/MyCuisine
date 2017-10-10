@@ -59,7 +59,7 @@
 
 .contentMain-content-area #breadcrumbs {
     min-height: 72px;
-    border-bottom: 1px solid #716851;
+    border-bottom: 1px solid rgba(101, 78, 45, .2);
     background-color: #fbfbf8;
     margin-bottom: 57px;
 }

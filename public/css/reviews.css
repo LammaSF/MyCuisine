@@ -1,6 +1,7 @@
 .review-item {
     background-color: white;
     margin-bottom: 10px;
+    border: 1px solid #5d261c;
 }
 
 .review {
@@ -8,7 +9,7 @@
     color: #5d261c;
 }
 
-.review .row h3, p {
+.review .row h3, .review .row p {
     margin-left: 13%;
     margin-top: -2%;
 }
@@ -16,8 +17,9 @@
 .review-title {
     text-transform: uppercase;
     font-family: Georgia, serif;
-    font-size: 22pt;
+    font-size: 20pt;
     margin-left: 5%;
+    color: #cac6a1;
 }
 
 .container .review {
