@@ -13,6 +13,7 @@
 #wrapper-background {
     width: 100%;
     height: 243pt;
+    top: -200px;
     background-color: #471414;
      /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #76422f 0, #5d261c 25%, #461312 55%, #471414 100%);

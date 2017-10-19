@@ -69,40 +69,47 @@
 
 <div class="loader"></div>
 
-<div id="wrapper">
-    <!--<div id="nav-after">&nbsp;</div>-->
-    <header id="myCuisine-header">
-        <nav class="container nav">
-            <div class = "header-menu">
-                <div class="navbar-header">
-                    <a id="logo" class="navbar-brand" href="#">
-                        <img src="images/Logo.png" class="center-block" alt="My Cuisine">
-                    </a>
-                </div>
-                <div id="myCuisine-navbar-collapse">
-                    <ul class="navbar nav navbar-nav">
-                        <li class="active"><a href="#">HOME</a></li>
-                        <li class="active"><a href="#/menu">MENU</a></li>
-                        <!--<li class="dropdown">-->
-                            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MENU <span class="caret"></span></a>-->
-                            <!--<ul class="dropdown-menu">-->
-                                <!--<li><a href="/#/menu/cakes">CAKES</a></li>-->
-                                <!--<li><a href="/#/menu">All</a></li>-->
+<nav class="navbar navbar-expand-md navbar-light bg-faded navigation">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#/" title="brand">
+            <img src="./images/Logo.png" class="d-inline-block align-top" alt="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <!--<span class="navbar-toggler-icon"></span>-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link focus" href="#/" title="Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/location" title="location">Location</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#/menu" title="Main Menu">ALL</a>
+                        <a class="dropdown-item" href="#/menu/cakes" title="cakes">CAKES</a>
+                        <a class="dropdown-item" href="#/menu/tarts" title="tarts">TARTS</a>
+                        <a class="dropdown-item" href="#/menu/pancakes" title="pancakes">PANCAKES</a>
+                    </div>
+                </li>
 
-                                <!--<li><a href="/#/menu/tarts">TARTS</a></li>-->
-                                <!--<li><a href="/#/menu/pancakes">PANCAKES</a></li>-->
-                            <!--</ul>-->
-                        </li>
-                        <li ><a href="#/location">LOCATION</a></li>
-                        <li><a href="#/articles">ARTICLES</a></li>
-                        <li><a href="#/reviews">REVIEWS</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/articles" title="articles">ARTICLES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#/reviews" title="REVIEWS">REVIEWS</a>
+                </li>
 
-
+            </ul>
+        </div>
+    </div>
+</nav>
     <!-- ==================================================== -->
 
     <div id="main-content"></div><!-- end #content -->
