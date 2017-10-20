@@ -38,8 +38,27 @@ const templates = (function () {
         });
     }
 
-    return {
-        getPage: getPage
+   function getTemplate(name) {
+        const cache = this.cache;
+        const _this = this;
+        return new Promise((resolve, reject) => {
+            if (cache[name]) {
+                resolve(cache[name]);
+            } else {
+                $.get(`templates/${name}.handlebars`, (templateHtml) => {
+                    const template = handlebars.compile(templateHtml);
+                    cache[name] = template;
+                    resolve(template);
+                });
+                _this.cache = cache;
+            }
+        });
+    }
+
+
+return {
+        getPage: getPage,
+    getTemplate: getTemplate
     };
 }());
 

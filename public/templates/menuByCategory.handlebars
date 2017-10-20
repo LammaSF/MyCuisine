@@ -1,0 +1,69 @@
+<div class="container" id="wrapper-background">
+    <div class="page-title">
+        <h1 class="header-title">OUR MENU</h1>
+        <p class="header-body">
+            Cakes, tarts, chocolates make our life sweet
+        </p>
+    </div>
+</div>
+<div class="contentMain-content-area menus">
+
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li><a href="/#">HOME</a></li>
+                <li><a href="/#/menu">MENU</a></li>
+                <li class="active">{{this.[0].category}}</li>
+            </ol>
+
+            <div class="myCuisine-search pull-right">
+                <form method="get" id="searchform" action="">
+
+                    <input type="text" id="search-input" class="" name="searchInput"
+                           placeholder="Search this website...">
+
+                    <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- content-area -->
+
+    <div class="content-area-container container menu">
+
+
+        <div class="row category-menu">
+            <div class="col-12 col-sm-8 col-md-7">
+                <div class="p-0">
+                    <h5 class="part-title pb-2 main-title">{{this.0.category}}</h5>
+                    <ul class="list-unstyled">
+                        {{#each this}}
+                            <li class="row pb-2 mb-2">
+                                <div class="col-6 col-sm-5 col-md-4 pr-0">
+                                    <img class="img-fluid img-thumbnail rounded-0 d-block" src="{{image}}" alt="Generic placeholder image">
+                                    <span class="menu-item-price"><span>${{price}}</span></span>
+                                </div>
+                                <div class="col-6 col-sm-7 col-md-8 pr-2 pt-1">
+                                    <a href="#/menu/{{category}}/{{_id}}" title="meal">
+                                        <h5 class="mb-1">{{name}}</h5>
+                                    </a>
+                                    <p>{{description}}</p>
+                                    <div class="text-right">
+                                        <a href="#/menu/{{category}}/{{_id}}" class="btn" title="read-more">Read more</a>
+                                    </div>
+                                </div>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <!--</div>-->
+            <div class="list-recommend">
+
+            </div>
+
+</div><!-- end content-area -->
+</div>
+</div>
+</div>

@@ -21,6 +21,7 @@ router
         '/#/reviews': () => reviewsController.all(),
         '/#/menu/:category/': (params) => menuController.getMenuCategory(params),
 
+
     })
     .notFound(() => templates.getPage('notFound', {}))
     .resolve();

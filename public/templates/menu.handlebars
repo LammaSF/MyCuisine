@@ -35,7 +35,10 @@
         <div class="content-items">
             <!--<div id="menu-page-content" class="row">-->
             <div class="col-xs-12 col-sm-4 cakes">
-                <h3 class="main-title">CAKES</h3>
+                <div class="cakes-title">
+                    <h3 class="main-title" >CAKES</h3>
+                </div>
+
                 {{#each this}}
                     {{#if (eq category "cakes")}}
                         <div id="menu-page-content" class="menu-item row">
@@ -66,7 +69,7 @@
 
 
             <div class="col-xs-12 col-sm-4 pancakes">
-                <h3 class="main-title">PANCAKES</h3>
+                <h3 class="main-title" id="items">PANCAKES</h3>
                 {{#each this}}
                     {{#if (eq category "pancakes")}}
                         <div id="menu-page-content" class="menu-item row">

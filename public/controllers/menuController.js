@@ -1,5 +1,6 @@
 import {templates} from 'templates';
 import 'bootstrap';
+import 'jquery';
 
 // function getAllMenus() {
 //
@@ -46,18 +47,23 @@ function all(){
 }
 
 function getMenuCategory(category) {
-
+    let rev;
 
     return new Promise((resolve, reject) => {
         let cat = category.category;
-
         let reviews = firebase.database().ref('menu/'+cat+'/');
+        let $this = $(this);
 
         reviews.once('value', (snapshot) => {
             let f = [];
 
             snapshot.forEach(element => {
                 // let cat = element.val().image;
+                //
+                // if (document.getElementsByTagName('h3').textContent != 'CAKES') {
+                // console.log(document.getElementById('#items'));
+                // $this.hide();
+           // }
                 console.log(cat);
                     let dbElements = {
                         'description': element.val().description,
@@ -71,11 +77,32 @@ function getMenuCategory(category) {
 
 
             })
-            templates.getPage('menu', f);
+            templates.getPage('menuByCategory', f)
+                // .then((data) => {
+                //     let reviews = firebase.database().ref('reviews/');
+                //     console.log(reviews.toString());
+                //     reviews.once('value', (snapshot) => {
+                //         let f = []
+                //         snapshot.forEach(element => {
+                //             let rev = {
+                //                 'review': element.val().review,
+                //                 'title': element.val().title,
+                //                 'name': element.val().name,
+                //                 'image': element.val().image
+                //
+                //             };
+                //             f.push(rev);
+                //         })
+                //         return templates.getTemplate('recommend');
+                //     }).then((template) => {
+                //         $('.list-recommend').html(template(rev));
+                //     });
+                // })
+
             $('.common-footer').css("display", "initial");
-            if (cat !== 'cakes') {
-                console.log(cat);
-                $('.cakes-title').hide();
+            if (cat != 'cakes') {
+                console.log(cat+'3');
+                // $('.cakes-title').css("display", "block");
             }
         })
     })

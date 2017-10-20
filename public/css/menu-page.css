@@ -3,31 +3,6 @@
     src: url('../fonts/LeagueGothic-Regular.otf') format("opentype");
 }
 
-/*#menu-page-content .menu-item-price {*/
-    /*display: block;*/
-    /*position: absolute;*/
-    /*background: url(../images/PriceLabel.png) no-repeat bottom left;*/
-    /*top: 12px;*/
-    /*left: -8px;*/
-    /*font-size: 18px;*/
-    /*padding-left: 8px;*/
-    /*color: white;*/
-    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;*/
-    /*letter-spacing: 1px;*/
-    /*padding: 3px;*/
-    /*padding-bottom: 8px;*/
-/*}*/
-
-/*#menu-page-content .menu-item-price > span {*/
-    /*margin: 2px;*/
-/*}*/
-
-/*.menu-title  {*/
-   /*text-transform: uppercase;*/
-    /*color: #cac6a1;*/
-    /*font-family: "LeagueGothic";*/
-/*}*/
-
 
 .cakes {
     float: left;
@@ -75,4 +50,53 @@
 
 .tarts {
     margin-left: 2%;
+}
+
+.category-menu {
+    margin-left: 17%;
+}
+
+.category-menu ul li .col-md-4 span.price-tag {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    font-size: 1.33em;
+    height: 32px;
+    font-family: 'LeagueGothic', serif;
+}
+.menu-item-price {
+    display: block;
+    position: absolute;
+    background: url(../images/PriceLabel.png) no-repeat bottom left;
+    top: 12px;
+    left: -1px;
+    font-size: 18px;
+    /*padding-left: 8px;*/
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
+    letter-spacing: 1px;
+    padding: 3px;
+    padding-bottom: 8px;
+}
+.category-menu ul li .col-md-8 p {
+    display: -webkit-box;
+    line-height: 1.4;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1.67em;
+}
+.category-menu ul li .col-md-8 .btn {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #9ed177;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4em 1.4em;
+    text-transform: capitalize;
+    border-radius: 25px;
+    font-size: 1em;
 }
