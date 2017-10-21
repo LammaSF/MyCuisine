@@ -83,6 +83,10 @@
         padding-left: 33px!important;
     }
 
+    .testimonials {
+        padding-left: 33px!important;
+    }
+
     .navbar-nav {
         padding-right: 0px;
         text-align: left;
@@ -800,14 +804,9 @@ nav #copyright a {
 
 /*home*/
 .container-fluid .testimonials {
-    padding-left: 33px;
+    padding-left: 40px;
 }
 
-@media screen and (min-width: 480px) {
-    .container-fluid .testimonials {
-
-    }
-}
 
 .container-fluid .recommendations {
     margin-bottom: 25px;
@@ -861,13 +860,13 @@ nav #copyright a {
     color: #402d1e;
     text-transform: none;
 }
-#wrapper section .container-fluid .testimonials {
+.container-fluid .testimonials {
     padding-right: 0;
     padding-left: 70px;
 }
 .container-fluid .bubble {
     position: relative;
-    width: 258px !important;
+    width: 225px !important;
     background-color: #fff;
     border: 1px solid #DAD6BA;
     -webkit-border-radius: 10px;
