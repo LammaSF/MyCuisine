@@ -43,6 +43,34 @@
         text-decoration: none !important;
     }
 }
+
+    /* Small devices (tablets, 768px and up) */
+    @media screen and (max-width: 992px) and (min-width: 768px) {
+        .recommendations {
+    padding-left: 66px!important;
+        }
+        nav {
+             margin-left: 0 !important;
+         }
+    }
+/* XS Small devices (under 768px) */
+@media screen and (max-width: 768px) {
+
+    nav {
+        margin-left: 0 !important;
+    }
+    #navbarsExampleDefault li {
+        display: inline-block;
+    }
+    #navbarsExampleDefault {
+        margin: 0 auto !important;
+    }
+    .recommendations {
+        padding-left: 33px!important;
+    }
+}
+
+
 body {
     max-width: 100%;
     margin:0 auto;
@@ -151,7 +179,7 @@ li.nav-item {
 }
 
 .navbar-nav {
-    padding-right: 17%;
+    padding-right: 25%;
     float: right;
 }
 .navigation .container-fluid .navbar-nav > li {
@@ -379,9 +407,11 @@ position: relative;
     text-shadow: 1px 1px 1px #fff;
     border-bottom: 1px solid rgba(101, 78, 45, .2);
     background-color: #fafaf7;
-    color: #654e2d;
-    font-family: "GoudyBookletter", serif;
+    color: #654e2d !important;
+    font-family: "GoudyBookletter", serif !important;
 }
+
+
 
 
 
@@ -450,6 +480,9 @@ position: relative;
     letter-spacing: -1px;
 }
 
+.recommendations {
+    padding-left: 0px;
+}
 
 .second-title {
     font-family: "LeagueGothic", serif;
@@ -465,7 +498,6 @@ position: relative;
     margin: 0 auto;
     position: relative;
     padding-top: 4.7em;
-    padding-bottom: 1.33em;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -504,7 +536,10 @@ div .recommend-title {
 #btn-browse-menu{
     background-color: #f5f3da;
 }
-
+.browse-content-btn:hover {
+    text-shadow: none !important;
+    font-style: italic;
+}
 .browse-content-btn {
     border-radius: 18px;
     border: 1px solid rgba(65, 58, 39, 0.8);
@@ -512,7 +547,7 @@ div .recommend-title {
     color: #fff;
     text-align: center;
     font-style: normal;
-    font-size: 1.3em;
+    font-size: 0.9em;
     background: #88b467;
     margin-bottom: -12px;
 
@@ -526,10 +561,10 @@ div .recommend-title {
 }
 
 .home-menu-btn {
-    /*width: 250px !important;*/
-    /*position: relative;*/
-    /*bottom: -93px !important;*/
-    overflow: hidden;
+    width: 250px !important;
+    position: relative;
+    bottom: -80px !important;
+
 
 }
 
@@ -537,13 +572,11 @@ div .recommend-title {
     outline: none;
 }
 
+
+
 /*footer*/
 
-/*footer {*/
-    /*position: relative;*/
-    /*top: -250px !important;*/
-    /*margin-bottom: 0px !important;*/
-/*}*/
+
 #myCuisine-footer {
     padding-top: 35px;
     background-color: #fafaf7;
@@ -674,7 +707,7 @@ div .recommend-title {
     border: 1px solid #ddd;
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
-    max-width: 100%;
+    max-width: 70px;
     height: 70px;
 }
 
@@ -682,14 +715,31 @@ div .recommend-title {
 
 
 /*home*/
+.container-fluid .testimonials {
+    padding-left: 33px;
+}
+
+@media screen and (min-width: 480px) {
+    .container-fluid .testimonials {
+        padding-left: 63px;
+    }
+}
+
+.container-fluid .recommendations {
+    margin-bottom: 25px;
+}
+
 
 .container-fluid .embed-location {
     margin-left: 30px;
     width: 600px;
 }
 .container-fluid .map {
-    /*padding-left: 33px;*/
+    padding-left: 33px;
+    margin-right: 0px;
+    margin-bottom: 25px;
 }
+
 .container-fluid .map .embed-responsive {
     height: 100px !important;
     max-width: 260px;
@@ -704,9 +754,16 @@ div .recommend-title {
 }
 .container-fluid .location {
     font-size: 1.17em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Georgia', serif;
     color: #908f7c;
+    font-style: italic;
     margin-top: 0.4rem;
+}
+
+.day {
+    font-family: 'LeagueGothic', serif;
+    color: #908f7c;
+    text-transform: uppercase;
 }
 #wrapper section .container-fluid .time {
     font-family: 'LeagueGothic', serif;
@@ -726,7 +783,7 @@ div .recommend-title {
 }
 .container-fluid .bubble {
     position: relative;
-    width: 258px;
+    width: 258px !important;
     background-color: #fff;
     border: 1px solid #DAD6BA;
     -webkit-border-radius: 10px;
