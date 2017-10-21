@@ -46,18 +46,28 @@
 
     /* Small devices (tablets, 768px and up) */
     @media screen and (max-width: 992px) and (min-width: 768px) {
-        .recommendations {
-    padding-left: 66px!important;
-        }
+        /*.recommendations {*/
+    /*padding-left: 66px!important;*/
+        /*}*/
         nav {
              margin-left: 0 !important;
          }
+
+        .home-view-container {
+            margin: 0 auto !important;
+        }
+        .testimonials {
+            padding-left:0px !important;
+        }
     }
 /* XS Small devices (under 768px) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
     nav {
         margin-left: 0 !important;
+    }
+    .home-img {
+        margin-right: 10px !important;
     }
     #navbarsExampleDefault li {
         display: inline-block;
@@ -65,8 +75,72 @@
     #navbarsExampleDefault {
         margin: 0 auto !important;
     }
+
+    #navbarsExampleDefault {
+        margin: 0 auto !important;
+    }
     .recommendations {
         padding-left: 33px!important;
+    }
+
+    .navbar-nav {
+        padding-right: 0px;
+        text-align: left;
+        padding-left: 20px !important;
+        margin: 0;
+    }
+    .slider-title {
+        padding-left: 21px !important
+    }
+
+    .thumb {
+        height: 85px !important;
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 766px) {
+    .home-img {
+        width: 70px;
+    }
+    .menu-home {
+        margin-left: 20px !important;
+    }
+    .testimonials {
+        padding-left: 30px !important;
+    }
+    .recommendations {
+        padding-left: 30px !important;
+    }
+    .home .embed-responsive-4by3 {
+
+        padding-bottom: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+    .home-img {
+        width: 70px;
+    }
+    .menu-home {
+        margin-left: 10px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 766px) and (min-width: 350px) {
+    .home-img {
+        width: 70px;
+    }
+
+    .menu-home {
+        margin-left: 80px !important;
+    }
+    .home .embed-responsive-4by3 {
+
+        padding-bottom: 50%;
     }
 }
 
@@ -179,7 +253,7 @@ li.nav-item {
 }
 
 .navbar-nav {
-    padding-right: 25%;
+    padding-right: 26%;
     float: right;
 }
 .navigation .container-fluid .navbar-nav > li {
@@ -265,8 +339,9 @@ li a:focus {
 /*-moz-border-bottom-colors: #8e8778; }*/
 
 #main-content {
-position: relative;
-    top: -80px !important;
+    position: relative;
+    top: -130px !important;
+    bottom: -130px !important;
 
 
 }
@@ -331,7 +406,7 @@ position: relative;
     margin-top:0px!important;
     /*interval: true;*/
     width: 100%;
-    height: 400px !important;
+    height: 500px !important;
     color: white;
     overflow: hidden;
     filter: brightness(50%);
@@ -563,7 +638,7 @@ div .recommend-title {
 .home-menu-btn {
     width: 250px !important;
     position: relative;
-    bottom: -80px !important;
+    bottom: -130px !important;
 
 
 }
@@ -577,6 +652,12 @@ div .recommend-title {
 /*footer*/
 
 
+.recent-data {
+    text-align: left;
+    border-bottom: 1px solid rgba(101, 78, 45, .2);
+    padding-bottom: 25px;
+    color: #442917 !important;
+}
 #myCuisine-footer {
     padding-top: 35px;
     background-color: #fafaf7;
@@ -585,7 +666,6 @@ div .recommend-title {
 
 .content-footer .container .row {
     line-height: 24px;
-    color: #442917 !important;
     padding-bottom: 15px;
     border-bottom: 1px solid #d5cf9d;
 }
@@ -615,7 +695,7 @@ div .recommend-title {
     padding-bottom: 25px;
 }
 
-#myCuisine-footer nav #copyright a {
+nav #copyright a {
     color: #686650;
 }
 
@@ -639,7 +719,7 @@ div .recommend-title {
     text-decoration: none;
 }
 
-#myCuisine-footer .lower-footer li a:hover {
+.lower-footer li a:hover {
     color: #cac6a1;
     font-style: italic;
 }
@@ -648,6 +728,10 @@ div .recommend-title {
     color: #cac6a1;
     text-transform: uppercase;
     font-family: LeagueGothic, serif;
+}
+
+.recent-comments {
+    padding-right: 0px;
 }
 
 
@@ -721,7 +805,7 @@ div .recommend-title {
 
 @media screen and (min-width: 480px) {
     .container-fluid .testimonials {
-        padding-left: 63px;
+
     }
 }
 
@@ -837,3 +921,6 @@ div .recommend-title {
 .container-fluid .info-parts h5 {
     padding-bottom: 0px;
 }
+
+
+

@@ -100,11 +100,11 @@
     margin-top: -12px !important;
 }
 
-.contentMain-content-area #breadcrumbs .container .myCuisine-search #search-input:focus {
+.myCuisine-search #search-input:focus {
     outline: none;
 }
 
-.contentMain-content-area #breadcrumbs .container .breadcrumb {
+.breadcrumb {
     font-size: 1.2em;
     margin: 0;
     padding: 26px 15px 0 0;
@@ -115,54 +115,58 @@
     vertical-align: baseline;
 }
 
-.contentMain-content-area #breadcrumbs .container .breadcrumb a {
+.container .breadcrumb a {
     color: #a29d79;
 }
 
-.contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before {
+.breadcrumb > li + li:before {
     content: "\00BB ";
 }
 
-.contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
+.breadcrumb > li + li:before a {
     color: #a29d79;
 }
 
-.contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
+.breadcrumb > .active {
     color: #442917;
 }
-.contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail {
+.content-items #location-page-content .thumbnail {
     /*width: 00px;*/
 
 }
 
-.contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
+.content-items #location-page-content .thumbnail #map {
     height: 400px;
 
 }
 
-.contentMain-content-area .content-area-container .content-items #location-page-content p {
+.content-items #location-page-content p {
     color: #442917;
     font-size: 1.3em;
+    font-family: "Georgia", serif;
 }
 
-.contentMain-content-area .content-area-container .content-items #location-page-content p span {
+.content-items #location-page-content p span {
     color: #6c634b;
 }
 
-.contentMain-content-area .content-area-container .content-items #location-home #map {
-    height: 150px;
-}
 
-.contentMain-content-area .content-area-container .content-items #location-home .work-time {
+
+.work-time {
     padding: 0;
 }
 
-.contentMain-content-area .content-area-container .content-items #location-home .work-time .day {
+.work-time .day {
     font-size: 1.5em;
 }
 
-.contentMain-content-area .content-area-container .content-items #location-home .work-time .clock {
+.work-time .clock {
     color: #442917;
+}
+
+.map-locationpage {
+    margin-left: 30px;
+    width: 600px;
 }
 
 .contentMain-content-area .content-area-container .content-items #testimonials .testimonial {
