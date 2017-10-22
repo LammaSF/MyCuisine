@@ -17,7 +17,7 @@
             </ol>
 
             <div class="myCuisine-search pull-right">
-                <form method="get" id="searchform" action="">
+                <form method="get" action="">
 
                     <input type="text" id="search-input" class="" name="searchInput"
                            placeholder="Search this website...">
@@ -45,12 +45,12 @@
                                     <span class="menu-item-price"><span>${{price}}</span></span>
                                 </div>
                                 <div class="col-6 col-sm-7 col-md-8 pr-2 pt-1">
-                                    <a href="#/menu/{{category}}/{{_id}}" title="meal">
-                                        <h5 class="mb-1">{{name}}</h5>
+                                    <a href="#/menu/{{category}}/{{_id}}">
+                                        <h5 class="mb-1 second-title">{{name}}</h5>
                                     </a>
                                     <p>{{description}}</p>
                                     <div class="text-right">
-                                        <a href="#/menu/{{category}}/{{_id}}" class="btn" title="read-more">Read more</a>
+                                        <a href="#/menu/{{category}}/{{_id}}" class="btn browse-content-btn" title="read-more">Read more</a>
                                     </div>
                                 </div>
                             </li>

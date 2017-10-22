@@ -29,10 +29,16 @@
     padding-bottom: 8px;
 }
 
+.thumb .img-thumbnail {
+    padding: 0px !important;
+    width: 80px;
+}
+
+
 .menu {
     height: 80% !important;
     width: 100%;
-    padding-bottom:150px;
+    padding-bottom:30px;
 }
 
 .cakes, .tarts, .pancakes {
@@ -99,4 +105,19 @@
     text-transform: capitalize;
     border-radius: 25px;
     font-size: 1em;
+}
+
+.menu-item-body p {
+    height: 35px;
+    overflow: hidden;
+
+}
+
+.menu-item-body h3 {
+    margin-bottom: 1px;
+}
+
+.category-menu .img-thumbnail {
+    height: 180px;
+    width: 250px;
 }

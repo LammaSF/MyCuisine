@@ -82,6 +82,7 @@
         text-align: left;
         padding-left: 20px !important;
         margin: 0;
+        margin-bottom: 15px;
     }
     .slider-title {
         padding-left: 21px !important
@@ -102,6 +103,10 @@
         max-width: 100px !important;
         width:200px !important;
     }
+    #breadcrumbs .container .myCuisine-search {
+
+         padding-right: 0% !important;
+    }
 
 
 
@@ -121,10 +126,11 @@
         padding-left: 30px !important;
     }
     .home .embed-responsive-4by3 {
-
         padding-bottom: 50%;
     }
-
+    .navbar-nav {
+        padding-right: 8% !important;
+    }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1000px) {

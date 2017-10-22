@@ -34,7 +34,7 @@
 
         <div class="content-items">
             <!--<div id="menu-page-content" class="row">-->
-            <div class="col-xs-12 col-sm-4 cakes">
+            <div class="col-sm-6 col-md-12 col-xs-3 cakes">
                 <div class="cakes-title">
                     <h3 class="main-title" >CAKES</h3>
                 </div>
@@ -68,18 +68,15 @@
             <!--</div>-->
 
 
-            <div class="col-xs-12 col-sm-4 pancakes">
+            <div class="col-sm-6 col-md-12 col-xs-3  pancakes">
                 <h3 class="main-title" id="items">PANCAKES</h3>
                 {{#each this}}
                     {{#if (eq category "pancakes")}}
                         <div id="menu-page-content" class="menu-item row">
 
-                            <!--<div class="col-xs-12 col-sm-6 col-md-4">-->
-
-                            <!--<div class="menu-item row">-->
                             <div class="thumb col-xs-12 col-sm-4">
 
-                                <img src="{{image}}" class="thumb" alt="{{title}}">
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
                                 <span class="menu-item-price"><span>${{price}}</span></span>
 
                             </div>
@@ -98,7 +95,7 @@
             </div>
 
 
-            <div class="col-xs-12 col-sm-4 tarts">
+            <div class="col-sm-6 col-md-12 col-xs-3 moved-1 tarts">
                 <h3 class="main-title">TARTS</h3>
                 {{#each this}}
                     {{#if (eq category "tarts")}}
