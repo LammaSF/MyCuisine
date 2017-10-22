@@ -8,8 +8,7 @@
     src: url('../fonts/goudy_bookletter_1911.otf') format("opentype");
 }
 
-:root{
---slider-title: {
+.slider-title {
 
            font-family: "LeagueGothic", serif;
            font-style: normal;
@@ -22,7 +21,7 @@
            font-size: 30pt;
 
        }
-}
+
 /*@media (max-width: 500px) {*/
     /*#home-recommend, #home-location, #home-testimonials {*/
         /*width:100%;*/
@@ -79,6 +78,7 @@
 
     nav {
         margin-left: 0 !important;
+        width: 100% !important;
     }
     .home-img {
         margin-right: 10px !important;
@@ -203,13 +203,14 @@ nav {
 
 margin-left: 17%;
     /*height: 70px;*/
+    width:83%;
 }
 .navigation {
     background-image: url('../images/header-bg.jpg');
     z-index: 999;
     font-size: 0.85em;
     margin-right: 0 !important;
-    position: relative;
+    position: absolute;
     top: 32px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -321,9 +322,9 @@ li a:focus {
 }
 
 #main-content {
-    position: relative;
-    top: -130px !important;
-    bottom: -130px !important;
+    /*position: relative;*/
+    /*top: -130px !important;*/
+    /*bottom: -130px !important;*/
 
 
 }
@@ -406,10 +407,6 @@ li a:focus {
     max-width: 350px;
 }
 
-.slider-title {
-    @apply --slider-title;
-
-}
 
 .slider-description {
 
@@ -559,7 +556,7 @@ li a:focus {
     max-width: 958px;
     margin: 0 auto;
     position: relative;
-    padding-top: 4.7em;
+    padding-top: 2.6em;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -625,7 +622,6 @@ div .recommend-title {
 .home-menu-btn {
     width: 250px !important;
     position: relative;
-    bottom: -130px !important;
 
 
 }
@@ -788,6 +784,7 @@ footer li a:hover {
 /*home*/
 .container-fluid .testimonials {
     padding-left: 40px;
+    margin-bottom: 20px;
 }
 
 

@@ -32,13 +32,19 @@
 }
 
 .page-title {
-
-    padding-left: 16%;
+    padding-top: 230px !important;
+    padding-left: 17%;
+    font-family: "LeagueGothic", serif;
 }
 .header-title {
     /*margin-top: -520px !important;*/
-    /*padding-top: 30px !important;*/
+
+    font-style: normal;
+    color: white;
     text-transform: uppercase;
+    z-index: 1000;
+    font-size: 30pt;
+
 }
 
 .header-title .header-body {
@@ -60,6 +66,7 @@
 
  .contentMain-content-area #breadcrumbs .container .myCuisine-search {
     padding-top: 13px;
+     padding-right: 17%;
 }
 
 .contentMain-content-area #breadcrumbs .container .myCuisine-search input {
