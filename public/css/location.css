@@ -32,13 +32,13 @@
 }
 
 .page-title {
-    padding-top: 230px !important;
-    padding-left: 17%;
-    font-family: "LeagueGothic", serif;
+    padding-top: 200px !important;
+    padding-left: 18%;
+
 }
 .header-title {
     /*margin-top: -520px !important;*/
-
+    font-family: "LeagueGothic", serif;
     font-style: normal;
     color: white;
     text-transform: uppercase;
@@ -47,9 +47,10 @@
 
 }
 
-.header-title .header-body {
-    color: #dacba7 !important;
-    font-family: HelveticaBold, sans-serif;
+.header-body {
+    font-size: 14pt;
+    color: #cac6a1;
+    font-family: "HelveticaBold", serif;
 }
 
 .contentMain-content-area {
@@ -61,7 +62,10 @@
     border-bottom: 1px solid rgba(101, 78, 45, .2);
     background-color: #fbfbf8;
     margin-bottom: 57px;
-    padding-left: 17%;
+    /*padding-left: 17%;*/
+}
+#breadcrumbs .container {
+    padding-left: 0px !important;
 }
 
  .contentMain-content-area #breadcrumbs .container .myCuisine-search {
@@ -94,6 +98,7 @@
     /*!* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
 }
 
+
 .myCuisine-search #search-button {
     outline: none;
     margin-top: -12px !important;
@@ -106,12 +111,13 @@
 .breadcrumb {
     font-size: 1.2em;
     margin: 0;
-    padding: 26px 15px 0 0;
     list-style: none;
     background-color: transparent;
     border: none;
     text-transform: uppercase;
     vertical-align: baseline;
+    padding-top: 25px;
+    margin-left: 7%;
 }
 
 .container .breadcrumb a {
@@ -139,13 +145,13 @@
 
 }
 
-.content-items #location-page-content p {
+#location-page-content p {
     color: #442917;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: "Georgia", serif;
 }
 
-.content-items #location-page-content p span {
+#location-page-content p span {
     color: #6c634b;
 }
 
@@ -165,20 +171,31 @@
 
 .map-locationpage {
     margin-left: 30px;
-    width: 600px;
+    width: 500px !important;
 }
 
-.contentMain-content-area .content-area-container .content-items #testimonials .testimonial {
-    box-shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b;
+.map-locationpage iframe {
+    border: 4px solid white !important;
+}
+.map-wrapper {
+    min-height: 380px !important;
+    min-width: 500px;
+    max-width: 400px;
+    padding-top: 10px;
 }
 
-.contentMain-content-area .content-area-container .content-items #testimonials .testimonial h1, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h6 {
-    margin: 0;
-    padding: 0;
+.map-frame {
+    border: 4px solid white !important;
+    min-height: 380px !important;
+    min-width: 500px;
+    max-width: 400px;
+
 }
+
+
 
 #location-page-content h3 {
-    font-family: LeagueGothic, serif;
+    font-family: "LeagueGothic", serif;
     font-size: 22pt;
     color: #cac6a1;
     text-transform: uppercase;
