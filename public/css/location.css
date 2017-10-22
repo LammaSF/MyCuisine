@@ -25,33 +25,25 @@
     color: #fff;
 }
 
+
+
+.content-area-container #location-page-content p {
+    font-style: normal;
+}
+
 .page-title {
+
     padding-left: 16%;
 }
-.contentMain-header .header-title {
-    padding-top: 30px !important;
+.header-title {
+    /*margin-top: -520px !important;*/
+    /*padding-top: 30px !important;*/
     text-transform: uppercase;
 }
 
 .header-title .header-body {
     color: #dacba7 !important;
     font-family: HelveticaBold, sans-serif;
-}
-
-.content-area-container #location-page-content p {
-    font-style: normal;
-}
-
-.contentMain-header #myCuisineCarousel > div {
-    min-height: 120px !important;
-}
-
-.contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
-    display: none !important;
-}
-
-.contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
-    display: none !important;
 }
 
 .contentMain-content-area {

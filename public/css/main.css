@@ -8,7 +8,21 @@
     src: url('../fonts/goudy_bookletter_1911.otf') format("opentype");
 }
 
+:root{
+--slider-title: {
 
+           font-family: "LeagueGothic", serif;
+           font-style: normal;
+           color: white;
+           text-transform: uppercase;
+           position: absolute;
+           margin-top: 50%;
+           display: inline;
+           z-index: 1000;
+           font-size: 30pt;
+
+       }
+}
 /*@media (max-width: 500px) {*/
     /*#home-recommend, #home-location, #home-testimonials {*/
         /*width:100%;*/
@@ -279,24 +293,6 @@ li.nav-item {
 .img-thumbnail {
     height: 70px;
 }
-/*#myCuisine-navbar-collapse{*/
-    /*float: right;*/
-/*}*/
-/*#myCuisine-navbar-collapse ul {*/
-    /*font-family: "Georgia";*/
-    /*font-size: 12pt;*/
-    /*list-style-type: none;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*overflow: hidden;*/
-    /*margin-top: 4%;*/
-    /*padding-right: 100px;*/
-    /*right: 17%;*/
-/*}*/
-
-/*#myCuisine-navbar-collapse li {*/
-    /*float: left;*/
-/*}*/
 
 li a {
     color: white;
@@ -304,13 +300,6 @@ li a {
     text-decoration: none;
 }
 
-/*#myCuisine-navbar-collapse li a {*/
-    /*color: white;*/
-    /*display: inline;*/
-    /*text-align: center;*/
-    /*padding: 11px;*/
-    /*text-decoration: none;*/
-/*}*/
 
 .navbar-brand>img {
     display: block;
@@ -319,8 +308,6 @@ li a {
 }
 
 .navigation .container-fluid .dropdown-menu li:hover a {
-    /*background: url(../images/current-bg.png) repeat-x 0 3px;*/
-    /*color: #eee4ba;*/
     font-style: italic;
     height: 65px;
     padding-top: 25px;
@@ -330,17 +317,8 @@ li a {
 }
 
 li a:focus {
-    /*font-style: italic;*/
-    /*height: 65px;*/
-    /*padding-top: 25px;*/
-    /*text-decoration: none;*/
     background-color: transparent;
 }
-/*line-height: 3px;
-
-/*border-bottom: 10px inset #8e8778;*/
-/*-moz-border-top-colors: #8e8778;*/
-/*-moz-border-bottom-colors: #8e8778; }*/
 
 #main-content {
     position: relative;
@@ -429,17 +407,7 @@ li a:focus {
 }
 
 .slider-title {
-    font-family: "LeagueGothic", serif;
-    font-style: normal;
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-    margin-top: 50%;
-    /*width: 100%;*/
-    display:inline;
-    z-index: 1000;
-    font-size: 30pt;
-
+    @apply --slider-title;
 
 }
 
@@ -478,6 +446,21 @@ li a:focus {
 
 .carousel-caption p {
     padding-left: -80%;
+}
+
+.page-title {
+    /*padding-top: 220px !important;*/
+    padding-left: 16%;
+}
+/*.header-title {*/
+    /*@apply --slider-title;*/
+    /*padding-top: 220px !important;*/
+    /*color: #6c634b;*/
+/*}*/
+
+.header-title .header-body {
+    color: #dacba7 !important;
+    font-family: HelveticaBold, sans-serif;
 }
 /*slogan*/
 
@@ -723,8 +706,8 @@ nav #copyright a {
     text-decoration: none;
 }
 
-.lower-footer li a:hover {
-    color: #cac6a1;
+footer li a:hover {
+    color: #cac6a1 !important;
     font-style: italic;
 }
 

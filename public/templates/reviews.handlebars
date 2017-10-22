@@ -28,53 +28,28 @@
 
 
         </div>
-    <div class="content-area-container container review">
+    <div class="content-area-container container">
+        <div class="container-fluid home-view-container">
+        <h5 class="main-title pb-2">Customer testimonials</h5>
+        {{#each this}}
+        <div class="col-sm-12 col-md-4 testimonials">
 
-        <!--<div id="menu-page-content" class="row">-->
-        <div class="col-xs-12 col-sm-4 review rev-wrapper">
-            <h3 class="main-title">CUSTOMER REVIEW</h3>
-            {{#each this}}
-                    <div id="menu-page-content" class="review-item row">
-
-                        <h2 class="review-title">{{title}}</h2>
-                        <div class="thumb col-xs-12 col-sm-4">
-
-                            <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
-
-
-                        </div>
-                        <div class="menu-item-body col-sm-8">
-                            <h3>{{name}}</h3>
-                            <p>{{review}}</p>
-                        </div>
-                        <!--</div>-->
-                        <!--</div>-->
+            <div class="shadow">
+                <div class="bubble">
+                    <img src="{{image}}" alt="customer" class="img-fluid thumb rounded-0" />
+                    <div class="testimonials-bubble">
+                        <h5 class="second-title">{{name}}</h5>
+                        <p>
+                            {{review}}
+                        </p>
                     </div>
+                </div>
+                <div class="clear"></div>
+            </div>
 
-                    <!-- end .content-items -->
-
+        </div>
             {{/each}}
         </div>
-    
-        <!--<div class="content-area-container container">-->
-            <!--<div class="content-items">-->
-                <!--<div id="testimonials" class="col-xs-12 col-sm-4" style="display: inline">-->
-                    <!--<h3 class="title">Customer Testimonials</h3>-->
-                    <!--{{#each this}}-->
-                        <!--<h2 class="review-title">{{title}}</h2>-->
-                        <!--<div class="panel-body">-->
-                            <!--<div class="thumb pull-left">-->
-                                <!--<img src="{{image}}" class="img-thumbnail" alt="{{name}}">-->
-                            <!--</div>-->
-                            <!--<h3>{{name}}</a></h3>-->
-                            <!--<p>{{review}}</p>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--{{/each}}-->
-                <!--</div>-->
+    </div>
+</div>
 
-            <!--</div>&lt;!&ndash; end .content-items &ndash;&gt;-->
-        <!--</div>-->
-    </div><!-- end content-area -->
-</div>
-</div>
