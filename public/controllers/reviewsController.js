@@ -7,7 +7,7 @@ function all(){
         let reviews = firebase.database().ref('reviews/');
         console.log(reviews.toString());
         reviews.once('value', (snapshot) => {
-            let f = []
+            let f = [];
             snapshot.forEach(element => {
                 let dbElements = {
                     'review': element.val().review,
@@ -17,7 +17,7 @@ function all(){
 
                 };
                 f.push(dbElements);
-            })
+            });
             templates.getPage('reviews', f);
             $('.common-footer').css("display", "initial");
         })

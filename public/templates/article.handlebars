@@ -12,7 +12,8 @@
             <div class="container">
                 <ol class="breadcrumb pull-left">
                     <li><a href="/#">HOME</a></li>
-                    <li class="active">ARTICLES</li>
+                    <li><a href="/#/articles">ARTICLES</a></li>
+                    <li class="active">{{this.[0].name}}</li>
                 </ol>
 
                 <div class="myCuisine-search pull-right">
@@ -32,15 +33,14 @@
             <div class="content-items">
                 <div id="blog-page-content" class="row">
 
-
+{{#each this}}
                     <div class="col-xs-12 col-sm-9">
                         <section class="post">
                             <div class="thumb pull-left">
-                                <img src="../images/tarts/54f63e462d837_-_strawberry-tart-mslo0410-xl.jpg" class="img-thumbnail" alt="img">
+                                <img src="{{image}}" class="img-thumbnail" alt="img">
                             </div>
                             <div class="post-body">
-                                Suspendisse aliquet sem ut nulla. Cras mollis ornare nisl. Morbi ac mi. Nunc eget nisi. Donec at enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed diam. Ut sagittis ultrices urna. Suspendisse eget erat non purus varius sodales. Aliquam imperdiet lobortis libero. Suspendisse scelerisque sagittis odio. Phasellus imperdiet interdum dolor. Mauris ante ante, gravida at, consectetuer quis, ullamcorper ornare, magna. Duis sed mauris sed libero tincidunt rutrum. In vulputate pretium dolor.Nullam ac erat. Donec a ipsum. Nullam tristique leo id lacus. Sed sed pede non arcu ornare interdum. Maecenas justo elit, rutrum in, adipiscing id, laoreet in, libero. Fusce quam. Donec a urna a enim gravida dictum. Nunc elementum, mauris sit amet imperdiet iaculis, dolor metus consectetuer mi, et tempor elit enim at massa. Duis ac nisl. Nullam pulvinar. Curabitur quam sapien, lobortis eu, luctus vitae, volutpat ac, metus. Nam elementum. Fusce fringilla. Praesent pulvinar turpis vitae justo cursus pulvinar. In hac habitasse platea dictumst. Nunc fermentum tellus interdum libero. Phasellus eros. Vestibulum euismod nunc at eros. Pellentesque nec ligula non tellus accumsan molestie. Pellentesque felis massa, tincidunt at, pulvinar id, placerat nec, velit.
-                                Cras rhoncus ipsum ac dolor. In hac habitasse platea dictumst. Nulla dapibus ultricies pede. Quisque augue risus, porttitor nec, suscipit ut, pellentesque quis, lacus. Duis adipiscing purus eu metus pharetra porttitor. Aenean sapien nisi, sodales non, facilisis nec, ultricies et, erat. Cras aliquam. Maecenas mi. Sed lacus arcu, malesuada id, ultricies et, ornare non, dolor. Maecenas turpis lacus, vehicula nec, blandit in, laoreet a, nibh. Donec aliquet. In et leo tincidunt tortor rhoncus convallis. Nulla facilisi. Praesent bibendum semper eros. Morbi risus. Nam tellus leo, ullamcorper egestas, venenatis quis, viverra ac, mauris. In hac habitasse platea dictumst. Curabitur at velit vel sem auctor hendrerit. Integer mauris orci, vehicula eu, feugiat ac, hendrerit ut, dolor. Fusce elit nulla, gravida quis, vulputate eu, rutrum vel, lectus. Integer cursus luctus nisl. Quisque quam. Aliquam lectus urna, porta in, viverra eu, pellentesque a, massa. Etiam eros sapien, porta et, aliquam et, bibendum sit amet, erat. Sed condimentum interdum lacus. In ut ante non felis tincidunt porta. Aenean aliquet ornare sem.
+                                {{body}}
                             </div>
                         </section>
                         <section class="post-comments">
@@ -156,6 +156,7 @@
                             </div>
                         </div>
                     </aside>
+{{/each}}
                 </div>
             </div><!-- end .content-items -->
         </div>

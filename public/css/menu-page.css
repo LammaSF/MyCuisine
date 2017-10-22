@@ -97,13 +97,12 @@
 .category-menu ul li .col-md-8 .btn {
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid #9ed177;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     display: inline-block;
     cursor: pointer;
     padding: 0.4em 1.4em;
     text-transform: capitalize;
-    border-radius: 25px;
+
     font-size: 1em;
 }
 

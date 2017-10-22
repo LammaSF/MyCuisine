@@ -9,17 +9,3 @@
     };
 
 
-    // const database = firebase.database();
-
-
- //
- // function getAllMenus() {
- //     return new Promise((resolve, reject) => {
- //         let reviews = this.database.ref('menu/');
- //         reviews.once('value', data => {
- //             resolve(data.val());
- //         });
- //     });
- // }
-
-

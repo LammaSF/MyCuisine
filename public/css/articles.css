@@ -3,13 +3,13 @@
     line-height: 2em;
 }
 
-#blog-page-content .comment-add {
+.comment-add {
     color: #442917;
 }
 
  #blog-page-content .post .thumb {
-    width: 219px;
-    height: 219px;
+    width: 280px;
+    height: 280px;
     margin-right: 2%;
 }
 

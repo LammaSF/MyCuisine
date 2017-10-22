@@ -18,6 +18,7 @@ router
         '/#/location': () => locationController.getPage(),
         '/#/menu': () => menuController.all(),
         '/#/articles': () => articlesController.all(),
+        '/#/articles/:id/': (params) => articlesController.getArticleByName(params),
         '/#/reviews': () => reviewsController.all(),
         '/#/menu/:category/': (params) => menuController.getMenuCategory(params),
 

@@ -20,6 +20,7 @@ function all() {
                     'description': element.val().description,
                     'price': element.val().price,
                     'image': element.val().image,
+                    'id':element.val().id,
                     'name': element.key,
                     'category': cat
 

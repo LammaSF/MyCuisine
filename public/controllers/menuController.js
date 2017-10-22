@@ -13,11 +13,11 @@ import 'jquery';
 //     });
 // }
 function all(){
-    // let cakes = firebase.database().ref('cakes');
+
     return new Promise((resolve, reject) => {
         let reviews = firebase.database().ref('menu/');
-        // console.log(reviews.toString());
-    reviews.once('value', (snapshot) => {
+
+        reviews.once('value', (snapshot) => {
         let f = [];
 
         snapshot.forEach(element => {
@@ -47,7 +47,6 @@ function all(){
 }
 
 function getMenuCategory(category) {
-    let rev;
 
     return new Promise((resolve, reject) => {
         let cat = category.category;
@@ -70,14 +69,15 @@ function getMenuCategory(category) {
                         'price': element.val().price,
                         'image': element.val().image,
                         'name': element.key,
+                        'id': element.val().id,
                         'category': cat
 
                     };
                     f.push(dbElements);
 
 
-            })
-            templates.getPage('menuByCategory', f)
+            });
+            templates.getPage('menuByCategory', f);
                 // .then((data) => {
                 //     let reviews = firebase.database().ref('reviews/');
                 //     console.log(reviews.toString());
@@ -100,10 +100,7 @@ function getMenuCategory(category) {
                 // })
 
             $('.common-footer').css("display", "initial");
-            if (cat != 'cakes') {
-                console.log(cat+'3');
-                // $('.cakes-title').css("display", "block");
-            }
+
         })
     })
     }
