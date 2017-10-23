@@ -1,6 +1,6 @@
 <div class="container" id="wrapper-background">
     <div class="page-title">
-    <h1 class="header-title">ARTICLES</h1>
+    <h1 class="header-title">{{this.[0].name}}</h1>
     <p class="header-body">
         Cakes, tarts, chocolates make our life sweet
     </p>
@@ -35,7 +35,7 @@
                     {{#each this}}
                     <div class="col-xs-12 col-sm-9 main-article">
                         <section class="post">
-                            <div class="img-thumbnail pull-left">
+                            <div class="img-thumbnail pull-left ">
                                 <img src="{{image}}" class="img-thumbnail" alt="img">
                             </div>
                             <div class="post-body">
@@ -48,12 +48,15 @@
                         </section>
                         <section class="post-comments">
                             <h2 class="title" style="font-family: 'LeagueGothic', serif; color: #cac6a1">2 COMMENTS</h2>
-                            <div class="pull-left">
+                            <div class="pull-left hidden-md hidden-sm hidden-xs">
                                 <img src="../images/users/sansa.jpg" class="img-thumbnail" alt="img">
                             </div>
                             <div class="row comment">
                                 <div class="col-xs-12 col-sm-10">
                                     <div class="panel panel-default comment-body">
+                                        <div class="pull-left hidden-lg">
+                                            <img src="../images/users/sansa.jpg" class="img-thumbnail" alt="img">
+                                        </div>
                                         <div class="panel-body">
                                             <h4 class="comment-title">Sansa says:</h4>
 
@@ -66,13 +69,16 @@
                                     </div>
 
                                     <div class="re-comment col-xs-12 col-offset-3 col-sm-12 col-offset-3">
-                                        <div class="pull-left">
+                                        <div class="pull-left hidden-md hidden-xs hidden-sm">
                                         <img src="../images/users/sansa.jpg" class="img-thumbnail" alt="img">
                                     </div>
                                         <div class="row comment">
 
                                             <div class="col-xs-12 col-sm-10 pull-right">
                                                 <div class="panel panel-default comment-body">
+                                                    <div class="pull-left hidden-lg">
+                                                        <img src="../images/users/sansa.jpg" class="img-thumbnail" alt="img">
+                                                    </div>
                                                     <div class="panel-body">
                                                         <h4 class="comment-title">Sansa says:</h4>
 
