@@ -7,10 +7,12 @@
     color: #442917;
 }
 
- #blog-page-content .post .thumb {
-    width: 280px;
-    height: 280px;
-    margin-right: 2%;
+ #blog-page-content .post .img-thumbnail {
+     width: 200px;
+     height: 200px;
+     margin-right: 2%;
+     padding: 0;
+     border: 2px solid white;
 }
 
 #blog-page-content .post-comments .comment-title {
@@ -70,5 +72,38 @@
 }
 
 .article-btn {
+    margin-bottom: 5px;
+}
+
+.article-date {
+    color: #8e8778 !important;
+    font-style: italic;
+}
+
+.post-comments img {
+    height: 80px !important;
+    display: inline-block;
+    width: 80px;
+}
+
+.re-comment img {
+    width: 80px;
+}
+
+section {
+    margin-left: 85px;
+    max-width: 750px;
+}
+
+.main-article{
+    max-width: 750px;
+}
+
+.recent {
+    margin-top: 0px;
+    font-size: 22pt !important;
+}
+
+#blog-page-content .btn {
     margin-bottom: 5px;
 }

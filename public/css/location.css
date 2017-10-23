@@ -182,6 +182,8 @@
     min-width: 500px;
     max-width: 400px;
     padding-top: 10px;
+    margin-bottom: 40px;
+    padding-bottom: 100px !important;
 }
 
 .map-frame {

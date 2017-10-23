@@ -31,17 +31,16 @@ function all() {
 }
 
 function getArticleByName(id) {
-    console.log( id);
+
     return new Promise((resolve, reject) => {
         let ids = Object.values(id)[0];
-        console.log(typeof ids);
+
         let articles = firebase.database().ref('articles/' + ids+'/');
 
         articles.once('value', (snap) => {
             let f = [];
-            console.log(articles);
-//             snapshot.forEach(el => {
-// console.log(el.val())
+
+//
             console.log(snap.val().date);
                 let dbElements = {
                     'body': snap.val().body,
@@ -63,6 +62,38 @@ function getArticleByName(id) {
     })
 }
 
+function search(words) {
+    console.log(words);
+    return new Promise((resolve, reject) => {
+        let ids = Object.values(id)[0];
+        console.log(typeof ids);
+        let articles = firebase.database().ref('articles/' + ids+'/');
+
+        articles.once('value', (snap) => {
+            let f = [];
+            console.log(articles);
+//             snapshot.forEach(el => {
+// console.log(el.val())
+            console.log(snap.val().date);
+            let dbElements = {
+                'body': snap.val().body,
+                'date': snap.val().date,
+                'image': snap.val().image,
+                'author': snap.val().author,
+                'name': snap.val().name,
+            };
+
+            f.push(dbElements);
+
+
+            // });
+            templates.getPage('article', f);
+
+
+            $('.common-footer').css("display", "initial");
+        })
+    })
+}
 
 let articlesControl = {
     all,
