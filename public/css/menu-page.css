@@ -120,3 +120,13 @@
     height: 180px;
     width: 250px;
 }
+.main-title a {
+    color: #cac6a1 !important;
+    font-family: "LeagueGothic", serif !important;
+    font-size: 22pt;
+    text-transform: uppercase;
+}
+
+.main-title a{
+    margin-left: -12px;
+}
