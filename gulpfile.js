@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const plugins = require('gulp-load-plugins');
-const shell = require('gulp-shell')
+const shell = require('gulp-shell');
 const imagemin = require('gulp-imagemin');
 
 const $ = plugins();

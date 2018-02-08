@@ -403,6 +403,10 @@ li a:focus {
 
 /*slider*/
 
+#slider {
+    width:100%;
+    position: relative;
+}
 .slider-title {
 
     font-family: "LeagueGothic", serif;
@@ -417,16 +421,21 @@ li a:focus {
 
 }
 
+#carouselIndicators {
+    height: 465px;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-inner {
+    background-image: url('../images/slider/Cake_Strawberry_Blueberries_Dessert.jpg');
+}
 .carousel-inner > .item > img {
     /*margin-top:0px;*/
-    padding-top: 0%;
-    position: relative;
-    top: 0;
-    /*left: 0;*/
-    margin-top: 0px !important;
-    /*interval: true;*/
+    padding-top: 0;
+position: relative;
     width: 100%;
-    height: 500px !important;
+    height: 465px;
     color: white;
     overflow: hidden;
     filter: brightness(50%);
@@ -449,7 +458,7 @@ li a:focus {
     text-transform: none;
     font-size: 18pt;
     font-family: "LeagueGothic", serif;
-    position: relative;
+    /*position: relative;*/
     color: white;
     /*width: 100%;*/
 
@@ -460,19 +469,41 @@ li a:focus {
     margin-left: -38px;
 }
 
-.carousel-indicators {
-    margin-right: 51%;
-    /*background-color: #442917;*/
+ol.carousel-indicators {
+    background: #e5e3cf;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e5e3cf 0%, #fefefe 51%, #fefefd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e5e3cf 0%, #fefefe 51%, #fefefd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e5e3cf 0%, #fefefe 51%, #fefefd 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
+    width: 90px;
+    bottom: 0;
+    margin: 0 auto;
+    margin-left: -45px;
+
+
+    padding: 7px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.carousel-indicators .active {
-    background-color: #ffffff;
-
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 0;
+    margin-left:2px;
+    border: 3px solid gray inset;
+    background-color: #e7e6cd;
 }
-
-.carousel-indicators li {
-
+ol.carousel-indicators li.active {
+    background: #5c5342;
 }
 
 .carousel-caption p {
