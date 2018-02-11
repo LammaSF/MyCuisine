@@ -422,20 +422,58 @@ li a:focus {
 }
 
 #carouselIndicators {
-    height: 465px;
+    height: 500px; !important;
     width: 100%;
     position: relative;
 }
 
 .carousel-inner {
-    background-image: url('../images/slider/Cake_Strawberry_Blueberries_Dessert.jpg');
+    /*background-image: url('../images/slider/Cake_Strawberry_Blueberries_Dessert.jpg');*/
+}
+
+.carousel-inner > .item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    -webkit-transform: translate3d(0, 0, 0) !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+.carousel-inner > .item:first-of-type {
+    position: relative;
+}
+.carousel-inner > .active {
+    opacity: 1;
+    z-index: 3;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+    left: 0;
+    z-index: 2;
+}
+.carousel-inner > .active.left,
+.carousel-inner > .active.right {
+    z-index: 1;
+}
+.carousel-control {
+    z-index: 4;
 }
 .carousel-inner > .item > img {
     /*margin-top:0px;*/
     padding-top: 0;
 position: relative;
     width: 100%;
-    height: 465px;
+    height: 500px;
     color: white;
     overflow: hidden;
     filter: brightness(50%);
@@ -445,6 +483,11 @@ position: relative;
 
 .carousel-caption {
     text-shadow: none;
+    top: 30%;
+    text-align: left;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 20px;
 }
 
 .carousel-inner .item .carousel-caption p {
@@ -456,17 +499,41 @@ position: relative;
 .slider-description {
 
     text-transform: none;
-    font-size: 18pt;
+    font-size: 16pt;
     font-family: "LeagueGothic", serif;
     /*position: relative;*/
     color: white;
     /*width: 100%;*/
+    width: 40%;
 
 }
 
-.slider-description .slider-button {
-    text-align: left;
+.slider-button {
+    padding: 0 19px 0 0;
+    float:left;
+    background: url('../images/search_btn.png') no-repeat;
+    background-size: 110px 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 34px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+    display: block;
+    cursor: pointer;
+    text-transform: capitalize;
     margin-left: -38px;
+}
+
+.slider-button a {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+.slider-shadow {
+    max-width: 958px;
+    margin: -5px auto;
 }
 
 ol.carousel-indicators {
@@ -499,7 +566,6 @@ ol.carousel-indicators li.active {
     border-radius: 50%;
     margin-top: 0;
     margin-left:2px;
-    border: 3px solid gray inset;
     background-color: #e7e6cd;
 }
 ol.carousel-indicators li.active {
@@ -518,7 +584,16 @@ ol.carousel-indicators li.active {
     border-bottom: 1px solid rgba(101, 78, 45, .2);
     background-color: #fafaf7;
     color: #654e2d !important;
-    font-family: "GoudyBookletter", serif !important;
+    font-family: "GoudyBookletter1911", serif !important;
+    margin-top:-20px;
+}
+.slogan-down {
+    font-family: 'GoudyBookletter1911', serif;
+    text-transform: uppercase;
+    color: #aea38d;
+    margin-top: -10px;
+    padding-right: 10px;
+    font-size: 20px;
 }
 
 .glyphicon-star-empty {
@@ -547,19 +622,27 @@ ol.carousel-indicators li.active {
     box-shadow: inset 0 2px 0 2px #e0e0e0;
     text-shadow: 1px 1px 1px #fff;
     background: lightgrey;
-    /* Old browsers */
-    /*background: -moz-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);*/
-    /*!* FF3.6-15 *!*/
-    /*background: -webkit-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);*/
-    /*!* Chrome10-25,Safari5.1-6 *!*/
-    /*background: -radial-gradient(to bottom, #e0e0e0 0%, #f6f6f6 100%);*/
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .myCuisine-search #search-input:focus {
     outline: none;
 }
 
+#search-button {
+    background-image: url(../images/search_btn.png);
+    border-radius: 25px;
+    color: #fff;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 1px solid #9ed177;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4em 1.4em;
+    text-transform: capitalize;
+}
 .center {
     text-align: center;
 }
@@ -571,9 +654,10 @@ ol.carousel-indicators li.active {
 
 /*main*/
 .content-area-container {
-    height: 36%;
-    background-color: #f5f3da;
-    margin-bottom: 40px;
+    width: 100%;
+    color: #b4a48d;
+    background-image: url('../images/content-bg.png');
+
 
 }
 
@@ -646,7 +730,11 @@ div .recommend-title {
 }
 
 #btn-browse-menu {
-    background-color: #f5f3da;
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    right: 0;
+    margin: 0 auto !important;
 }
 
 .browse-content-btn:hover {
@@ -655,15 +743,24 @@ div .recommend-title {
 }
 
 .browse-content-btn {
-    border-radius: 18px;
-    border: 1px solid rgba(65, 58, 39, 0.8);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black !important;
+
+    /*border: 1px solid rgba(65, 58, 39, 0.8);*/
     color: #fff;
     text-align: center;
     font-style: normal;
-    font-size: 0.9em;
-    background: #88b467;
-    margin-bottom: -12px;
+
+    background: #a19c75;
+    border: solid #615f47 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 25px;
+    position: relative;
+    top: -2vh;
+    padding: 0.5em 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
     /* Old browsers */
     /*background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);*/
@@ -672,7 +769,7 @@ div .recommend-title {
     /*!* Chrome10-25,Safari5.1-6 *!*/
     /*background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);*/
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
+
 
 .home-menu-btn {
     width: 250px !important;
@@ -693,11 +790,7 @@ div .recommend-title {
     color: #442917 !important;
 }
 
-#myCuisine-footer {
-    padding-top: 35px;
-    background-color: #fafaf7;
-    border-top: 1px solid rgba(101, 78, 45, .2);
-}
+
 
 .content-footer .container .row {
     line-height: 24px;
@@ -719,10 +812,11 @@ div .recommend-title {
 }
 
 #myCuisine-footer {
-    padding-top: 15px;
+    padding-top: 35px;
     background-color: #f2f1e8;
     color: #442917;
     font-family: Georgia, serif;
+    border-top: 1px solid rgba(101, 78, 45, .2);
 }
 
 #myCuisine-footer nav #copyright {
@@ -824,7 +918,7 @@ footer li a:hover {
     border-radius: 0.25rem;
     transition: all 0.2s ease-in-out;
     max-width: 70px;
-    height: 77px;
+    height: 85px;
 }
 
 /*home*/
@@ -911,7 +1005,6 @@ footer li a:hover {
 
 .container-fluid .bubble img {
     float: left;
-    max-width: 28%;
     margin-right: 15px;
 }
 
@@ -932,14 +1025,8 @@ footer li a:hover {
 }
 
 .container-fluid .bubble:after {
-    content: ' ';
     position: absolute;
-    border-style: solid;
-    border-width: 0 20px 20px;
-    display: block;
-    width: 0;
-    border-color: transparent #fff transparent transparent;
-    z-index: 2;
+    background-image: url('../images/bottom-testimonials-bg.png');
     bottom: -20px;
     left: 70%;
 }

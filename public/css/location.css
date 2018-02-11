@@ -99,14 +99,7 @@
 }
 
 
-.myCuisine-search #search-button {
-    outline: none;
-    margin-top: -12px !important;
-}
 
-.myCuisine-search #search-input:focus {
-    outline: none;
-}
 
 .breadcrumb {
     font-size: 1.2em;

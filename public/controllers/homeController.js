@@ -28,27 +28,13 @@ function all() {
                 f.push(dbElements);
 
 
-            })
+            });
             templates.getPage('home', f) .done(() => {
-                jQuery(document).ready(function ($) {
 
                     $('#carouselIndicators').carousel({
-                        interval: 7000,
+                        interval: 7000
                     });
 
-                })
-                //Handles the carousel thumbnails
-                $('[id^=carousel-selector-]').click(function () {
-                    let id_selector = $(this).attr("id");
-                    let id = /-(\d+)$/.exec(id_selector)[1];
-                    jQuery('#carouselIndicators').carousel(parseInt(id));
-                });
-                // When the carousel slides, auto update the text
-                $('#carouselIndicators').on('slid.bs.carousel', function (e) {
-                    let id = $('.item.active').data('slide-number');
-
-                    $('#carousel-text').html($('#slide-content-' + id).html());
-                });
             })
         })
     })
