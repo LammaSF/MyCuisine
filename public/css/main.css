@@ -531,6 +531,12 @@ position: relative;
     padding: 5px 15px;
 }
 
+.slider-button a:hover {
+    text-shadow: none !important;
+    font-style: italic;
+}
+
+
 .slider-shadow {
     max-width: 958px;
     margin: -5px auto;
@@ -1024,9 +1030,15 @@ footer li a:hover {
     text-transform: capitalize;
 }
 
-.container-fluid .bubble:after {
+.bubble:after {
+    content: ' ';
     position: absolute;
-    background-image: url('../images/bottom-testimonials-bg.png');
+    border-style: solid;
+    border-width: 0 20px 20px;
+    display: block;
+    width: 0;
+    border-color: transparent #fff transparent transparent;
+    z-index: 2;
     bottom: -20px;
     left: 70%;
 }
