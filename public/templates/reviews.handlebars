@@ -18,9 +18,10 @@
                 <div class="myCuisine-search pull-right">
                     <form method="get" id="searchform" action="">
 
-                        <input type="text" id="search-input" class="" name="searchInput" placeholder="Search this website...">
+                        <input type="text" id="search-input" class="" name="searchInput"
+                               placeholder="Search this website...">
 
-                        <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
+                        <button type="submit" id="search-button">Search</button>
                     </form>
                 </div>
             </div>
@@ -28,11 +29,11 @@
 
 
         </div>
-    <div class="content-area-container container">
+    <div class="content-area-container container reviews">
         <div class="container-fluid home-view-container">
         <h5 class="main-title pb-2 customer-testimonials">Customer testimonials</h5>
         {{#each this}}
-        <div class="col-sm-6 col-md-4 testimonials">
+        <div class="col-sm-6 col-md-4 testimonials first-testimonials">
 
             <div class="shadow">
                 <div class="bubble" style="width: 245px !important">

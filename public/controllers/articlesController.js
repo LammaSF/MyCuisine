@@ -62,8 +62,15 @@ function getArticleByName(id) {
     })
 }
 
-function search(words) {
-    console.log(words);
+function search() {
+    let resultSearch;
+    $('#search-button').on('click', () => {
+        const title = $('#search-input').val();
+        console.log(title);
+
+
+    });
+    console.log();
     return new Promise((resolve, reject) => {
         let ids = Object.values(id)[0];
         console.log(typeof ids);

@@ -26,6 +26,10 @@
     margin: 0 auto;
 }
 
-.customer-testimonials {
-    padding-left: 70px;
+.reviews .customer-testimonials {
+    padding-left: 17% !important;
+}
+
+.first-testimonials:first-child  {
+    padding-left: 17% !important;
 }
