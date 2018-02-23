@@ -30,13 +30,15 @@
 
         </div>
     <div class="content-area-container container reviews">
-        <div class="container-fluid home-view-container">
-        <h5 class="main-title pb-2 customer-testimonials">Customer testimonials</h5>
+        <div class="container-fluid reviews-container bts-correction">
+        <h5 class="main-title pb-2 customer-testimonials bts-correction">Customer testimonials</h5>
+            <div class="row">
         {{#each this}}
-        <div class="col-sm-6 col-md-4 testimonials first-testimonials">
+
+        <div class="col-sm-6 col-md-4 col-lg-2">
 
             <div class="shadow">
-                <div class="bubble" style="width: 245px !important">
+                <div class="bubble">
                     <img src="{{image}}" alt="customer" class="img-fluid thumb rounded-0" />
                     <div class="testimonials-bubble">
                         <h5 class="second-title">{{name}}</h5>
@@ -50,6 +52,7 @@
 
         </div>
             {{/each}}
+        </div>
         </div>
     </div>
 </div>

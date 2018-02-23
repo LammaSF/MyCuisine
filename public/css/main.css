@@ -28,6 +28,9 @@
         right: 0;
         text-decoration: none !important;
     }
+    .testimonials {
+        padding-left: 33px !important;
+    }
 
 }
 
@@ -48,8 +51,9 @@
     .map-wrapper {
         margin-left: 120px;
     }
-
-
+    .testimonials {
+        padding-left: 33px !important;
+    }
 
 }
 
@@ -126,10 +130,6 @@
         margin-right: 20px;
     }
 
-    .customer-testimonials {
-        margin-left: -40px;
-    }
-
 
 
     #wrapper-background {
@@ -191,6 +191,9 @@
 
     .re-comment img {
         margin: 10px 10px 10px 10px;
+    }
+    .recommendations {
+        padding-left: 33px !important;
     }
 }
 @media screen and (max-width: 766px) and (min-width: 350px) {
@@ -710,7 +713,6 @@ ol.carousel-indicators li.active {
 }
 
 .row {
-    margin-right: -15px;
     margin-left: -15px;
     margin-bottom: 15px;
 }
@@ -770,6 +772,10 @@ div .recommend-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.browse-content-btn:focus {
+    background: #a19c75;
 }
 
     /* Old browsers */
@@ -1002,7 +1008,7 @@ footer li a:hover {
 
 .container-fluid .bubble {
     position: relative;
-    width: 225px !important;
+    width: 300px !important;
     background-color: #fff;
     border: 1px solid #DAD6BA;
     -webkit-border-radius: 10px;
@@ -1011,6 +1017,7 @@ footer li a:hover {
     padding: 15px 15px 10px 15px;
     text-align: left;
     z-index: 5;
+    margin-bottom: 50px;
 }
 
 .container-fluid .bubble img {

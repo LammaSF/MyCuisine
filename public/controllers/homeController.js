@@ -4,7 +4,6 @@ import 'jquery';
 
 
 function all() {
-
     $('.common-footer').css("display", "none");
     return new Promise((resolve, reject) => {
         let cat = "tarts";
@@ -32,7 +31,7 @@ function all() {
             templates.getPage('home', f) .done(() => {
 
                     $('#carouselIndicators').carousel({
-                        interval: 7000
+                        interval: 5000
                     });
 
             })
@@ -45,6 +44,6 @@ function all() {
 
 let homeControl = {
     all,
-}
+};
 
 export { homeControl as homeController };

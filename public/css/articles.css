@@ -91,13 +91,16 @@
     width: 80px;
 
 }
+.bts-correction {
+    padding-left: 0 !important;
+}
 
 section {
-    margin-left: 85px;
     max-width: 750px;
 }
 
 .main-article{
+    margin-left: 17%;
     max-width: 750px;
 }
 
@@ -108,4 +111,5 @@ section {
 
 #blog-page-content .btn {
     margin-bottom: 5px;
+    margin-top:10px;
 }

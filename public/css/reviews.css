@@ -26,10 +26,16 @@
     margin: 0 auto;
 }
 
-.reviews .customer-testimonials {
-    padding-left: 17% !important;
-}
 
 .first-testimonials:first-child  {
     padding-left: 17% !important;
+}
+
+.reviews-container {
+    margin-left: 17%;
+}
+
+.bubble:not(:first-child){
+    margin-left:5px;
+    margin-right: 5px;
 }
